@@ -22,7 +22,11 @@ From your CloudAMQP dashboard, you'll need:
 
 ### Method 1: Using the UI (Recommended)
 
-1. Go to **Settings** → **Devices & Services** 2. Click **Add Integration** 3. Search for and select **MQTT** 4. Choose **Manual configuration** 5. Enter your LavinMQ details:
+1. Go to **Settings** → **Devices & Services** 
+2. Click **Add Integration** 
+3. Search for and select **MQTT** 
+4. Choose **Manual configuration** 
+5. Enter your LavinMQ details:
    - **Broker**: Your LavinMQ host (without protocol)
    - **Port**: 1883 or 8883
    - **Username**: Your LavinMQ username
@@ -59,7 +63,9 @@ mqtt:
 
 After configuration, test the connection:
 
-1. Go to **Developer Tools** → **Services** 2. Search for `mqtt.publish` 3. Use this service data:
+1. Go to **Developer Tools** → **Services** 
+2. Search for `mqtt.publish` 
+3. Use this service data:
 ```yaml
 topic: homeassistant/test
 payload: "Hello from Home Assistant!"

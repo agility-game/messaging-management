@@ -5,7 +5,7 @@ I'll help you integrate Home Assistant with LavinMQ on CloudAMQP. This setup all
 ## Prerequisites
 
 First, ensure you have:
-- A CloudAMQP account with a LavinMQ instance
+- A CloudAMQP account with a [LavinMQ](https://customer.cloudamqp.com/instance/) instance
 - Home Assistant installed and running
 - Your LavinMQ connection details from CloudAMQP dashboard
 

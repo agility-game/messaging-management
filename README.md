@@ -17,7 +17,7 @@ messaging-management
 
 **Executive Summary**
 
-Text
+Using messaging management with LavinMQ on CloudAMQP to use MQTT with Eccel Pepper C1 MUX Near Field Communication (NFC) Antennas and Reader with an integration of MQTT in Home Assistant.
 
 Generated with [Rytr](https://app.rytr.me)
 

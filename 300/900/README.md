@@ -12,10 +12,10 @@ First, ensure you have:
 ## Getting LavinMQ Connection Details
 
 From your CloudAMQP dashboard, you'll need:
-- **Server/Host**: Your LavinMQ instance URL
-- **Port**: Usually 1883 (non-SSL) or 8883 (SSL)
-- **Username**: Your LavinMQ username
-- **Password**: Your LavinMQ password
+- **Server/Host**: Your LavinMQ instance URL (here: collie.lmq.cloudamqp.com)
+- **Port**: Usually 1883 (non-SSL) or 8883 (SSL) (here: 1883)
+- **Username**: Your LavinMQ username (here: tlkaaxtf:tlkaaxtf)
+- **Password**: Your LavinMQ password (see https://api.cloudamqp.com/console/36c83daa-48f9-4a5a-9b3a-edf871ac74bb/details)
 - **Virtual Host**: Usually "/" or your specific vhost
 
 ## Configuring Home Assistant
@@ -27,10 +27,10 @@ From your CloudAMQP dashboard, you'll need:
 3. Search for and select **MQTT** 
 4. Choose **Manual configuration** 
 5. Enter your LavinMQ details:
-   - **Broker**: Your LavinMQ host (without protocol)
-   - **Port**: 1883 or 8883
-   - **Username**: Your LavinMQ username
-   - **Password**: Your LavinMQ password
+   - **Broker**: Your LavinMQ host (without protocol) (here: collie.lmq.cloudamqp.com)
+   - **Port**: 1883 or 8883 (here: 1883)
+   - **Username**: Your LavinMQ username (here: tlkaaxtf:tlkaaxtf)
+   - **Password**: Your LavinMQ password (see https://api.cloudamqp.com/console/36c83daa-48f9-4a5a-9b3a-edf871ac74bb/details)
    - **Client ID**: Leave default or set custom
    - **Keep alive**: 60 (default)
 

@@ -53,6 +53,11 @@ If you haven't already set up MQTT in Home Assistant:
 
 ### Via configuration.yaml:
 ```yaml
+== reference to mqtt.yaml goes here ==
+```
+
+### mqtt.yaml
+```yaml
 mqtt:
   broker: your-lavinmq-host.cloudamqp.com
   port: 1883
@@ -63,7 +68,7 @@ mqtt:
 
 ## Step 3: Create Home Assistant Sensors
 
-Add these sensors to your `configuration.yaml` to read Pepper C1 data:
+Add these sensors to your `mqtt.yaml` to read Pepper C1 data:
 
 ```yaml
 mqtt:

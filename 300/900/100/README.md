@@ -13,7 +13,8 @@ The data flow will be:
 ### Configure MQTT Settings
 In the Pepper C1 web interface:
 
-1. Go to **Network** → **MQTT Settings** 2. Configure the following:
+1. Go to **Network** → **MQTT Settings** 
+2. Configure the following:
    - **MQTT Broker**: Your LavinMQ host from CloudAMQP
    - **Port**: 1883 (or 8883 for SSL)
    - **Username**: Your LavinMQ username
@@ -22,7 +23,8 @@ In the Pepper C1 web interface:
    - **Keep Alive**: 60 seconds
 
 ### Configure Data Publishing
-1. Go to **Data** → **Publishing Settings** 2. Set up topic structure, for example:
+1. Go to **Data** → **Publishing Settings** 
+2. Set up topic structure, for example:
    - **Base Topic**: `pepper_c1/data`
    - **Device ID Topic**: `pepper_c1/device_id`
    - **Status Topic**: `pepper_c1/status`

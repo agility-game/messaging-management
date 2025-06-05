@@ -31,7 +31,9 @@
    - `pepper_c1/mux/channel_8`   
    - `pepper_c1/status`
 
-3. **Home Assistant** subscribes to these topics through LavinMQ 4. Data appears as sensors in Home Assistant for monitoring and automation
+3. **Home Assistant** subscribes to these topics through LavinMQ 
+
+4. Data appears as sensors in Home Assistant for monitoring and automation
 
 **4. Network Configuration Benefits**
 

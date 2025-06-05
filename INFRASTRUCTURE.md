@@ -4,7 +4,7 @@
 
 ## Data Flows
 
-- Eccel Pepper C1 MUX Reader to CLoudAMQP LavinMQ: ```pepper_c1/mux/channel_1-8```, ```pepper_c1/status```
+- Eccel Pepper C1 MUX Reader to CloudAMQP LavinMQ: ```pepper_c1/mux/channel_1-8```, ```pepper_c1/status```
 
 - LavinMQ to Home Assistant: Subscribe to ```pepper_c1``` topics
 

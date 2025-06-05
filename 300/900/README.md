@@ -8,14 +8,22 @@ See also [Infrastructure](./INFRASTRUCTURE.md).
 
 See [README.md](./100/README.md)
 
-## Prerequisites
+## 200 - Prerequisites
+
+See [README.md](./200/README.md)
+
+=== MOVE THE BELOW TO THE README.md FILE ===
 
 First, ensure you have:
 - A CloudAMQP account with a [LavinMQ](https://customer.cloudamqp.com/instance/) instance
 - Home Assistant installed and running
 - Your LavinMQ connection details from CloudAMQP dashboard
 
-## Getting LavinMQ Connection Details
+## 300 - Getting LavinMQ Connection Details
+
+See [README.md](./300/README.md)
+
+=== MOVE THE BELOW TO THE README.md FILE ===
 
 ![Image](https://github.com/user-attachments/assets/377bdf82-0394-4cce-bb3a-d06d1f760086)
 
@@ -26,7 +34,11 @@ From your CloudAMQP dashboard, you'll need:
 - **Password**: Your LavinMQ password (see https://api.cloudamqp.com/console/36c83daa-48f9-4a5a-9b3a-edf871ac74bb/details)
 - **Virtual Host**: Usually "/" or your specific vhost
 
-## Configuring Home Assistant
+## 400 - Configuring Home Assistant
+
+See [README.md](./400/README.md)
+
+=== MOVE THE BELOW TO THE SPECIFIC README.md FILE ====
 
 ### Method 1: Using the UI (Recommended)
 

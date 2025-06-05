@@ -6,7 +6,9 @@ The data flow will be:
 ## Step 1: Configure Pepper C1 MUX Reader
 
 ### Access Pepper C1 Web Interface
-1. Find the Pepper C1's IP address on your network (check your router's DHCP client list) 2. Open a web browser and navigate to `http://[pepper-c1-ip-address]` 3. Log in with your credentials (default is usually admin/admin)
+1. Find the Pepper C1's IP address on your network (check your router's DHCP client list) 
+2. Open a web browser and navigate to `http://[pepper-c1-ip-address]` 
+3. Log in with your credentials (default is usually admin/admin)
 
 ### Configure MQTT Settings
 In the Pepper C1 web interface:
@@ -40,7 +42,8 @@ pepper_c1/config
 If you haven't already set up MQTT in Home Assistant:
 
 ### Via UI:
-1. **Settings** → **Devices & Services** → **Add Integration** 2. Search for **MQTT** and configure with your LavinMQ credentials
+1. **Settings** → **Devices & Services** → **Add Integration** 
+2. Search for **MQTT** and configure with your LavinMQ credentials
 
 ### Via configuration.yaml:
 ```yaml
@@ -148,10 +151,14 @@ history:
 ## Step 5: Testing and Verification
 
 ### Test MQTT Connection:
-1. In Home Assistant, go to **Developer Tools** → **MQTT** 2. Subscribe to `pepper_c1/#` to see all messages from your device 3. Check if data is being received
+1. In Home Assistant, go to **Developer Tools** → **MQTT** 
+2. Subscribe to `pepper_c1/#` to see all messages from your device 
+3. Check if data is being received
 
 ### Verify Pepper C1 Publishing:
-1. Check LavinMQ management interface on CloudAMQP 2. Look for active connections from your Pepper C1 3. Monitor message rates and topics
+1. Check LavinMQ management interface on CloudAMQP 
+2. Look for active connections from your Pepper C1 
+3. Monitor message rates and topics
 
 ### Debug Common Issues:
 

@@ -11,6 +11,8 @@ First, ensure you have:
 
 ## Getting LavinMQ Connection Details
 
+![Image](https://github.com/user-attachments/assets/377bdf82-0394-4cce-bb3a-d06d1f760086)
+
 From your CloudAMQP dashboard, you'll need:
 - **Server/Host**: Your LavinMQ instance URL (here: collie.lmq.cloudamqp.com)
 - **Port**: Usually 1883 (non-SSL) or 8883 (SSL) (here: 1883)

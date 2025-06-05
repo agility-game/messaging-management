@@ -4,7 +4,7 @@
 
 ### 1. MQTT Broker Configuration (CloudAMQP/LavinMQ)
 
-In your `configuration.yaml`:
+In your `mqtt.yaml`:
 
 ```yaml
 mqtt:

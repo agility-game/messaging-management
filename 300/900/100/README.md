@@ -100,6 +100,30 @@ mqtt:
       device_class: voltage
       value_template: "{{ value_json.voltage | float }}"
 
+    - name: "Pepper C1 Channel 5"
+      state_topic: "pepper_c1/mux/channel_5"
+      unit_of_measurement: "V"
+      device_class: voltage
+      value_template: "{{ value_json.voltage | float }}"
+
+    - name: "Pepper C1 Channel 6"
+      state_topic: "pepper_c1/mux/channel_6"
+      unit_of_measurement: "V"
+      device_class: voltage
+      value_template: "{{ value_json.voltage | float }}"
+
+    - name: "Pepper C1 Channel 7"
+      state_topic: "pepper_c1/mux/channel_7"
+      unit_of_measurement: "V"
+      device_class: voltage
+      value_template: "{{ value_json.voltage | float }}"
+
+    - name: "Pepper C1 Channel 8"
+      state_topic: "pepper_c1/mux/channel_8"
+      unit_of_measurement: "V"
+      device_class: voltage
+      value_template: "{{ value_json.voltage | float }}"
+
     # Device status
     - name: "Pepper C1 Status"
       state_topic: "pepper_c1/status"

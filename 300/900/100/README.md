@@ -35,6 +35,10 @@ pepper_c1/mux/channel_1
 pepper_c1/mux/channel_2
 pepper_c1/mux/channel_3
 pepper_c1/mux/channel_4
+pepper_c1/mux/channel_5
+pepper_c1/mux/channel_6
+pepper_c1/mux/channel_7
+pepper_c1/mux/channel_8
 pepper_c1/status
 pepper_c1/config
 ```

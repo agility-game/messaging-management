@@ -53,8 +53,10 @@ If you haven't already set up MQTT in Home Assistant:
 
 ### Via configuration.yaml:
 ```yaml
-== reference to mqtt.yaml goes here ==
+mqtt: !include mqtt.yaml
 ```
+
+See also [Splitting up the configuration](https://www.home-assistant.io/docs/configuration/splitting_configuration/).
 
 ### mqtt.yaml
 ```yaml

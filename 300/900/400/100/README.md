@@ -2,6 +2,14 @@
 
 ## Home Assistant MQTT Configuration
 
+In your `configuration.yaml`:
+
+```yaml
+mqtt: !include mqtt.yaml
+sensor: !include sensor.yaml
+automation: !include automation.yaml
+```
+
 ### 1. MQTT Broker Configuration (CloudAMQP/LavinMQ)
 
 In your `mqtt.yaml`:
@@ -30,6 +38,8 @@ mqtt:
 
 ### 2. NFC Tag Sensor Configuration
 
+In your `sensor.yaml`:
+
 ```yaml
 sensor:
   - platform: mqtt
@@ -42,6 +52,8 @@ sensor:
 
 ### 3. Tag Event Configuration
 
+In your `mqtt.yaml`:
+
 ```yaml
 mqtt:
   tag:
@@ -50,6 +62,8 @@ mqtt:
 ```
 
 Or for more advanced tag handling:
+
+In your `automation.yaml`:
 
 ```yaml
 automation:
@@ -91,7 +105,7 @@ nfc/reader/antenna/[1-8] # Individual antenna readings
 
 ### 5. Multi-Antenna Configuration
 
-For the MUX capability (up to 8 antennas):
+For the MUX capability (up to 8 antennas), in your `sensor.yaml`:
 
 ```yaml
 sensor:
@@ -117,6 +131,8 @@ sensor:
 - **Protocol:** MQTT 3.1.1 (recommended for compatibility)
 
 ### 7. Advanced Tag Recognition
+
+In your `automation.yaml`:
 
 ```yaml
 input_text:

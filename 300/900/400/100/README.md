@@ -2,6 +2,8 @@
 
 ## Home Assistant MQTT Configuration
 
+See also [Splitting up the configuration](https://www.home-assistant.io/docs/configuration/splitting_configuration/).
+
 In your `configuration.yaml`:
 
 ```yaml

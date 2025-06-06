@@ -1,6 +1,6 @@
 # Infrastructure
 
-![Image](https://github.com/user-attachments/assets/ad2c18b9-0d45-420f-8568-2278c014353d)
+![Image](https://github.com/user-attachments/assets/05f3e40b-617c-49a8-a568-08ed40cbe6ac)
 
 ## Key Components
 

@@ -9,3 +9,9 @@ First, ensure you have:
 
 Hence:
 
+## MQTT details
+
+Hostname: ```collie.lmq.cloudamp.com```
+Ports: ```1883```
+Username: ```tlkaaxtf:tlkaaxtf```
+Password: Get it from https://api.cloudamqp.com/console/36c83daa-48f9-4a5a-9b3a-edf871ac74bb/details

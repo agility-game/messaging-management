@@ -8,14 +8,14 @@
 ### Configure MQTT Settings
 In the Pepper C1 web interface:
 
-1. Go to **Network** → **MQTT Settings** 
+1. Go to **Communication** → **MQTT client** 
 2. Configure the following:
-   - **MQTT Broker**: Your LavinMQ host from CloudAMQP
+   - **MQTT Broker/Server Address**: Your LavinMQ host from CloudAMQP (here: ```collie.lmq.cloudamqp.com```)
    - **Port**: 1883 (or 8883 for SSL)
-   - **Username**: Your LavinMQ username
-   - **Password**: Your LavinMQ password
-   - **Client ID**: `pepper_c1_reader` (or similar unique name)
-   - **Keep Alive**: 60 seconds
+   - **Username**: Your LavinMQ username (here: ```tlkaaxtf:tlkaaxtf```)
+   - **Password**: Your LavinMQ password (see https://api.cloudamqp.com/console/36c83daa-48f9-4a5a-9b3a-edf871ac74bb/details)
+   - **Client ID**: `pepper_c1-mux-09dced` (or similar unique name)
+   - **Keep Alive**: 60 seconds (if available)
 
 ### Configure Data Publishing
 1. Go to **Data** → **Publishing Settings** 

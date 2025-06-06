@@ -35,7 +35,7 @@ First, ensure you have:
 
 - You have created a **Username** with **Password** in EMQX [authorization](https://cloud-intl.emqx.com/console/deployments/q3297d6a/acl) page.
 
-=== IMAGE GOES HERE ===
+![Image](https://github.com/user-attachments/assets/6627e842-20dd-4805-ae73-8140958c4a35)
 
 - Your EMQX connection details from [EMXQ dashboard](https://cloud-intl.emqx.com/console/deployments/q3297d6a/settings).
 

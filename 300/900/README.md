@@ -12,20 +12,9 @@ See [README.md](./100/README.md)
 
 See [README.md](./200/README.md)
 
-## 300 - Getting LavinMQ Connection Details
+## 300 - Configure Pepper C1 MUX Reader
 
 See [README.md](./300/README.md)
-
-=== MOVE THE BELOW TO THE README.md FILE ===
-
-![Image](https://github.com/user-attachments/assets/377bdf82-0394-4cce-bb3a-d06d1f760086)
-
-From your CloudAMQP dashboard, you'll need:
-- **Server/Host**: Your LavinMQ instance URL (here: collie.lmq.cloudamqp.com)
-- **Port**: Usually 1883 (non-SSL) or 8883 (SSL) (here: 1883)
-- **Username**: Your LavinMQ username (here: tlkaaxtf:tlkaaxtf)
-- **Password**: Your LavinMQ password (see https://api.cloudamqp.com/console/36c83daa-48f9-4a5a-9b3a-edf871ac74bb/details)
-- **Virtual Host**: Usually "/" or your specific vhost
 
 ## 400 - Configuring Home Assistant
 

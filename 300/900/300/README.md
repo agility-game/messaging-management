@@ -9,7 +9,7 @@
 In the Pepper C1 web interface:
 
 1. Go to **Communication** → **MQTT client**
-2. Check MQTT service enabled
+2. Check **MQTT service enabled**
 3. Configure the following:
    - **MQTT Broker/Server Address**: Your LavinMQ host from CloudAMQP (here: ```collie.lmq.cloudamqp.com```)
    - **Port**: 1883 (or 8883 for SSL)
@@ -19,6 +19,7 @@ In the Pepper C1 web interface:
    - **Input topic***: ```in_topic```
    - **Client ID**: `pepper_c1-mux-09dced` (or similar unique name) (if available)
    - **Keep Alive**: 60 seconds (if available)
+4. Click **Save & Restart**
 
 ### Configure Data Publishing
 1. Go to **Data** → **Publishing Settings** 

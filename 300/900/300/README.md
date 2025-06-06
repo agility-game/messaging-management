@@ -15,7 +15,9 @@ In the Pepper C1 web interface:
    - **Port**: 1883 (or 8883 for SSL)
    - **Username**: Your LavinMQ username (here: ```tlkaaxtf:tlkaaxtf```)
    - **Password**: Your LavinMQ password (see https://api.cloudamqp.com/console/36c83daa-48f9-4a5a-9b3a-edf871ac74bb/details)
-   - **Client ID**: `pepper_c1-mux-09dced` (or similar unique name)
+   - **Output topic**: ```out_topic```
+   - **Input topic***: ```in_topic```
+   - **Client ID**: `pepper_c1-mux-09dced` (or similar unique name) (if available)
    - **Keep Alive**: 60 seconds (if available)
 
 ### Configure Data Publishing

@@ -23,7 +23,7 @@ From your CloudAMQP dashboard, you'll need:
 ## For EMQX (Experimental, but working)
 
 First, ensure you have:
-- A CloudAMQP account with a [EMQX](https://cloud-intl.emqx.com/console/deployments/q3297d6a/settings) instance
+- An EMQX account with a [EMQX](https://cloud-intl.emqx.com/console/deployments/q3297d6a/settings) instance
 - Home Assistant installed and running
 - You have created a **Client ID**, **Username** with **Password** in EMQX [authentication](https://cloud-intl.emqx.com/console/deployments/q3297d6a/auth) page.
 

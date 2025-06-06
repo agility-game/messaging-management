@@ -7,7 +7,7 @@
 **1. Local Network (Home WiFi)**
 
 - WiFi Router (192.168.1.1) - Central hub for your home network
-- Eccel Pepper C1 MUX Reader (192.168.1.100) - Your 8-channel multiplexer device
+- Eccel Pepper C1 MUX Reader (192.168.1.127) - Your 8-channel multiplexer device.**NOTE**: Due to DHCP setup, the automatically assigned IP address can vary.
 - Mac Mini (192.168.1.200) - Physical host machine
 - Parallels VM - Running Home Assistant in bridge network mode
 

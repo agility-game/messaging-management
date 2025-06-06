@@ -51,3 +51,11 @@ From your EMQX dashboard, you'll need:
 - **Username**: Your EMQX username (here: tlkaaxtf:tlkaaxtf)
 - **Password**: Your EMQX password (see https://api.cloudamqp.com/console/36c83daa-48f9-4a5a-9b3a-edf871ac74bb/details)
 - **Virtual Host**: Usually "/" or your specific vhost
+
+### Test with MQTTX Client
+
+Let us **publish*** a message on the ```out_topic``` in the [MQTTX Client](https://github.com/emqx/MQTTX):
+
+![Image](https://github.com/user-attachments/assets/52992a57-9ee8-4310-baf2-8279bd91188e)
+
+

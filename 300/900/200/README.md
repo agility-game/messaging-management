@@ -11,7 +11,9 @@ Hence:
 
 ## MQTT details
 
-Hostname: ```collie.lmq.cloudamqp.com```<br/>
-Ports: ```1883```<br/>
-Username: ```tlkaaxtf:tlkaaxtf```<br/>
-Password: Get it from https://api.cloudamqp.com/console/36c83daa-48f9-4a5a-9b3a-edf871ac74bb/details<br/>
+From your CloudAMQP dashboard, you'll need:
+- **Server/Host**: Your LavinMQ instance URL (here: collie.lmq.cloudamqp.com)
+- **Port**: Usually 1883 (non-SSL) or 8883 (SSL) (here: 1883)
+- **Username**: Your LavinMQ username (here: tlkaaxtf:tlkaaxtf)
+- **Password**: Your LavinMQ password (see https://api.cloudamqp.com/console/36c83daa-48f9-4a5a-9b3a-edf871ac74bb/details)
+- **Virtual Host**: Usually "/" or your specific vhost

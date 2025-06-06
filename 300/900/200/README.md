@@ -63,3 +63,7 @@ Within seconds the published message is also received, as the MQTTX client is **
 ![Image](https://github.com/user-attachments/assets/05d6803d-e710-40e7-8df6-fe6e3003e978)
 
 The message has been routed through the EMQX Message Broker successfully!
+
+When we read an NFC tag by the Pepper C1 MUX Reader, as it send its UID, it is also received by the MQTTX Client:
+
+![Image](https://github.com/user-attachments/assets/e50181be-0d6c-48c1-a22b-4f9069b2bac8)

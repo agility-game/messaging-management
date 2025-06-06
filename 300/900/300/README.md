@@ -21,6 +21,12 @@ In the Pepper C1 web interface:
    - **Keep Alive**: 60 seconds (if available)
 4. Click **Save & Restart**
 
+### Testing the MQTT connection using MQTTX
+
+Download and install the platform independent application [MQTTX](https://github.com/emqx/MQTTX).
+
+MORE
+
 ### Configure Data Publishing
 1. Go to **Data** → **Publishing Settings** 
 2. Set up topic structure, for example:

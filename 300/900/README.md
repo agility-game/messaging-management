@@ -2,7 +2,7 @@
 
 I'll help you integrate Home Assistant with LavinMQ on CloudAMQP. This setup allows Home Assistant to publish and subscribe to MQTT messages through LavinMQ's MQTT broker service.
 
-See also [Infrastructure](./INFRASTRUCTURE.md).
+See also [Infrastructure](../../INFRASTRUCTURE.md).
 
 ## 100 - Architecture Overview
 

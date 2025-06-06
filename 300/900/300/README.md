@@ -8,8 +8,9 @@
 ### Configure MQTT Settings
 In the Pepper C1 web interface:
 
-1. Go to **Communication** → **MQTT client** 
-2. Configure the following:
+1. Go to **Communication** → **MQTT client**
+2. Check MQTT service enabled
+3. Configure the following:
    - **MQTT Broker/Server Address**: Your LavinMQ host from CloudAMQP (here: ```collie.lmq.cloudamqp.com```)
    - **Port**: 1883 (or 8883 for SSL)
    - **Username**: Your LavinMQ username (here: ```tlkaaxtf:tlkaaxtf```)

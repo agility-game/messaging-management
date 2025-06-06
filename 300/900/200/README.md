@@ -27,7 +27,7 @@ First, ensure you have:
 - Home Assistant installed and running
 - Your EMQX connection details from EMXQ dashboard
 
-![Image](https://github.com/user-attachments/assets/045e752b-ff05-4589-8ff9-d893c8b23eea)
+![Image](https://github.com/user-attachments/assets/0c5c43b4-6064-488f-be13-7544e7dc19c2)
 
 Hence:
 

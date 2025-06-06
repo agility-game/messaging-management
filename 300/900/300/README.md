@@ -8,6 +8,8 @@
 ### Configure MQTT Settings
 In the Pepper C1 web interface:
 
+#### For LavinMQ (Not yet working)
+
 1. Go to **Communication** → **MQTT client**
 2. Check **MQTT service enabled**
 3. Configure the following:
@@ -19,6 +21,19 @@ In the Pepper C1 web interface:
    - **Input topic**: ```in_topic```
    - **Client ID**: `pepper_c1-mux-09dced` (or similar unique name) (if available)
    - **Keep Alive**: 60 seconds (if available)
+4. Click **Save & Restart**
+
+#### For EMQX (Experimental, but working)
+
+1. Go to **Communication** → **MQTT client**
+2. Check **MQTT service enabled**
+3. Configure the following:
+   - **MQTT Broker/Server Address**: Your EMQX host (here: ```q3297d6a.ala.eu-central-1.emqxsl.com```)
+   - **Port**: 8883
+   - **Username**: Your EMQX username (here: ```tlkaaxtf:tlkaaxtf```)
+   - **Password**: Your EMQX password (see https://api.cloudamqp.com/console/36c83daa-48f9-4a5a-9b3a-edf871ac74bb/details)
+   - **Output topic**: ```out_topic```
+   - **Input topic**: ```in_topic```
 4. Click **Save & Restart**
 
 ### Testing the MQTT connection using MQTTX

@@ -58,7 +58,7 @@ Let us **publish*** a message on the ```out_topic``` in the [MQTTX Client](https
 
 ![Image](https://github.com/user-attachments/assets/52992a57-9ee8-4310-baf2-8279bd91188e)
 
-Within seconds the published message is also received, as the MQTTX lient is **subscribed** to the ```out_topic```:
+Within seconds the published message is also received, as the MQTTX client is **subscribed** to the ```out_topic```:
 
 ![Image](https://github.com/user-attachments/assets/05d6803d-e710-40e7-8df6-fe6e3003e978)
 

@@ -52,6 +52,7 @@ database: 'your_database',
 username: 'your_username',
 password: 'your_password'
 }
+```
 
 We are now connected to our MongoDB instance through RoboMongo:
 

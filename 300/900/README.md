@@ -129,3 +129,9 @@ mqtt:
 ```
 
 This setup will enable Home Assistant to communicate with your devices and services through LavinMQ's reliable MQTT broker on CloudAMQP. The integration supports automatic device discovery, real-time messaging, and all standard MQTT features.
+
+## 500 - Setting Up MongoDB on Sliplane
+
+See [README.md](./500/README.md)
+
+MORE

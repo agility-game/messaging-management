@@ -37,10 +37,11 @@ Connection settings in RoboMongo:
 
 ![Image](https://github.com/user-attachments/assets/b8f6078f-9e31-46ce-9e39-ea83561126c8)
 
+![Image](https://github.com/user-attachments/assets/99c28af0-9ab4-4f07-81ec-e2f671714574)
 
-== IMAGE GOES HERE ==
+![Image](https://github.com/user-attachments/assets/01a2e402-fee7-4be4-803f-78d9f01a6385)
 
-== IMAGE GOES HERE ==
+![Image](https://github.com/user-attachments/assets/49dcfc66-5850-4c19-9d50-3eee5ee56d2b)
 
 For applications with connection options:
 ```javascript

@@ -25,13 +25,22 @@
 
 For external tools (MongoDB Compass, Studio 3T, etc.):
 
-**NOTE**: Recommended to use is [RoboMongo](https://robomongo.org/).
+**NOTE**: Recommended to use is [RoboMongo](https://robomongo.org/) by Studio 3T Community Edition.
 
 ```
 mongodb://your_username:your_password@mongo-tafo.sliplane.app:27017/your_database
 ```
 
 **NOTE**: If you just deployed or just connected your custom domain, it may take a while until the DNS propagation reaches your location.
+
+Connection settings in RoboMongo:
+
+![Image](https://github.com/user-attachments/assets/b8f6078f-9e31-46ce-9e39-ea83561126c8)
+
+
+== IMAGE GOES HERE ==
+
+== IMAGE GOES HERE ==
 
 For applications with connection options:
 ```javascript

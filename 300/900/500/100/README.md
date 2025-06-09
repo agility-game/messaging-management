@@ -9,10 +9,12 @@
 
 2. **Click on your MongoDB service (Mongo-tAfO)**
 
+![Image](https://github.com/user-attachments/assets/67a11add-aca2-4448-a145-ad1195c47ff8)
+
 3. **Look for connection details section** - you should find:
- - Database username
- - Database password  
- - Database name (default might be the same as username)
+ - Database username (here: admin)
+ - Database password (hidden in above screenshot)
+ - Database name (default might be the same as username) (here: mongo-tafo)
 
 4. **If credentials aren't visible:**
  - Check the "Environment Variables" tab

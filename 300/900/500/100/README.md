@@ -23,8 +23,10 @@
 
 For external tools (MongoDB Compass, Studio 3T, etc.):
 ```
-mongodb://your_username:your_password@mongo-taco.sliplane.app:27017/your_database
+mongodb://your_username:your_password@mongo-tafo.sliplane.app:27017/your_database
 ```
+
+**NOTE**: If you just deployed or just connected your custom domain, it may take a while until the DNS propagation reaches your location.
 
 For applications with connection options:
 ```javascript

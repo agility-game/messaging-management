@@ -6,3 +6,6 @@ The MongoDB database is hosted on Sliplane, a Software-as-a-Service that is a po
 
 See https://sliplane.io/app/projects/project_1i5szbhfgm12
 
+![Image](https://github.com/user-attachments/assets/9dfef88e-c82a-4b4c-a7d6-14e97f99a2ca)
+
+MORE

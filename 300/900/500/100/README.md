@@ -24,6 +24,9 @@
 ## 200 - Connection String Examples
 
 For external tools (MongoDB Compass, Studio 3T, etc.):
+
+**NOTE**: Recommended to use is [RoboMongo](https://robomongo.org/).
+
 ```
 mongodb://your_username:your_password@mongo-tafo.sliplane.app:27017/your_database
 ```

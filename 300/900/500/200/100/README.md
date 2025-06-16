@@ -36,6 +36,10 @@ Success!!
   - Select "MongoDB - Execute Aggregation"
   - Connect your MongoDB account using connection string
 
+![Image](https://github.com/user-attachments/assets/e0b77120-bf73-4254-b29b-76cd2817ea7f)
+
+![Image](https://github.com/user-attachments/assets/55d7ae47-f4e3-4e3f-a737-9ba7aafc2eee)
+
 == WE ARE HERE ==
 
 4. **Add Name Generation Logic**

@@ -133,7 +133,11 @@ This can also be seen from our MongoDB Client:
 4. **Add Response to EMQX Broker Logic**
   - Add "Node.js" step for custom code:​​​​​​​​​​​​​​​​
 
-== IMAGE GOES HERE ==
+![Image](https://github.com/user-attachments/assets/0e17a3c0-de5c-484a-8461-f7f55ae8da71)
+
+**WARNING**: You will have to configure the workflow to allow for **returning a custom response**.
+
+![Image](https://github.com/user-attachments/assets/eeb3f1d9-e8ee-4a67-a8f8-76c8992a31fc)
 
 ```
 // HTTP Response (Send response back to EMQX)
@@ -156,6 +160,7 @@ export default defineComponent({
  }
 });
 ```
+
 
 == WE ARE HERE ==
 

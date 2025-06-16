@@ -36,8 +36,7 @@ Success!!
 ![Image](https://github.com/user-attachments/assets/11d9e113-86bd-4d3d-b758-467986821cd3)
 
 ```
-// To use any npm package, just import it
-// import axios from "axios"
+// Generate Two-Word Name
 import { MongoClient } from 'mongodb';
 
 export default defineComponent({
@@ -117,20 +116,25 @@ export default defineComponent({
 });
 ```
 
-Name the step "register_device".
+Name the step "generate_name".
 
-![Image](https://github.com/user-attachments/assets/2c7c88e9-a288-40ab-ae97-57da267fda30)
+![Image](https://github.com/user-attachments/assets/1502c0f5-d821-4be0-b22b-5062f58cf610)
 
 Test our step:
 
-![Image](https://github.com/user-attachments/assets/c6173b3b-4b07-46cd-b909-8cf8b0ab57b9)
+![Image](https://github.com/user-attachments/assets/52b49fd0-0736-46f0-8a15-7c2045ef5008)
 
-Success! A new device is registered in the MongoDB database "**mqtt_registery**" inside the collection "**device_registry**" and a two-word combination is assigned to it (here: ```frozen-bold```).
+Success! A new device is registered in the MongoDB database "**mqtt_registery**" inside the collection "**device_registry**" and a two-word combination is assigned to it (here: ```rapid-flame```).
 
 This can also be seen from our MongoDB Client:
 
-![Image](https://github.com/user-attachments/assets/ce5f8ba9-0a1c-4441-9575-3404b90579bf)
+![Image](https://github.com/user-attachments/assets/234f7c29-384c-4789-a17e-2536d2c78e61)
 
+4. **Add Response to EMQX Broker Logic**
+  - Add "Node.js" step for custom code:​​​​​​​​​​​​​​​​
+
+
+  
 == WE ARE HERE ==
 
 MORE

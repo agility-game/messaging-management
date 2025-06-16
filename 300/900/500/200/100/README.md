@@ -30,24 +30,106 @@ Success!!
 
 ![Image](https://github.com/user-attachments/assets/2a8e4914-0091-4f29-a4f3-3e80f996a2ef)
 
-3. **Add MongoDB Connection Step**
-  - Click "+" to add new step
-  - Search for "MongoDB"
-  - Select "MongoDB - Execute Aggregation"
-  - Connect your MongoDB account using connection string
-
-![Image](https://github.com/user-attachments/assets/e0b77120-bf73-4254-b29b-76cd2817ea7f)
-
-Skip **Test Connection** if it fails.
-
-![Image](https://github.com/user-attachments/assets/55d7ae47-f4e3-4e3f-a737-9ba7aafc2eee)
-
-Choose database **mqtt_registry**:
-
-![Image](https://github.com/user-attachments/assets/d1102c42-79ab-4e1a-a7f9-be33fc152bc7)
-
-4. **Add Name Generation Logic**
+3. **Add Name Generation Logic**
   - Add "Node.js" step for custom code:​​​​​​​​​​​​​​​​
+
+![Image](https://github.com/user-attachments/assets/11d9e113-86bd-4d3d-b758-467986821cd3)
+
+```
+// To use any npm package, just import it
+// import axios from "axios"
+import { MongoClient } from 'mongodb';
+
+export default defineComponent({
+ async run({ steps, $ }) {
+   
+   // MongoDB connection details
+   const uri = process.env.MONGODB_URI; // Set in Pipedream environment variables
+   const client = new MongoClient(uri);
+
+   try {
+     await client.connect();
+     const db = client.db('mqtt_registry');
+
+     // Get word lists
+     const wordLists = await db.collection('word_lists').findOne({_id: 'naming_words'});
+     const adjectives = wordLists.adjectives;
+     const nouns = wordLists.nouns;
+
+     // Generate unique name
+     let generatedName;
+     let nameExists = true;
+     let attempts = 0;
+
+     while (nameExists && attempts < 50) {
+       const adj = adjectives[Math.floor(Math.random() * adjectives.length)];
+       const noun = nouns[Math.floor(Math.random() * nouns.length)];
+       generatedName = `${adj}-${noun}`;
+
+       // Check if name exists
+       const existing = await db.collection('device_registry').findOne({_id: generatedName});
+       nameExists = existing !== null;
+       attempts++;
+     }
+
+     if (nameExists) {
+       throw new Error('Could not generate unique name after 50 attempts');
+     }
+
+     // Extract device data from webhook payload
+     const deviceData = steps.trigger.event.body;
+
+     // Prepare device document
+     const deviceDoc = {
+       _id: generatedName,
+       client_id: generatedName,
+       original_client_id: deviceData.client_id || steps.trigger.event.headers['x-client-id'],
+       device_type: deviceData.device_type,
+       mac_address: deviceData.mac_address,
+       location: deviceData.location,
+       ip_address: deviceData.ip_address,
+       firmware_version: deviceData.firmware_version,
+       status: "online",
+       registered_at: new Date().toISOString(),
+       last_seen: new Date().toISOString(),
+       metadata: deviceData.metadata || {}
+     };
+
+     // Insert device into registry
+     await db.collection('device_registry').insertOne(deviceDoc);
+
+     return {
+       success: true,
+       assigned_name: generatedName,
+       device_data: deviceDoc,
+       message: "Device registered successfully"
+     };
+
+   } catch (error) {
+     return {
+       success: false,
+       error: error.message
+     };
+   } finally {
+     await client.close();
+   }
+ }
+});
+```
+
+Name the step "register_device".
+
+![Image](https://github.com/user-attachments/assets/2c7c88e9-a288-40ab-ae97-57da267fda30)
+
+Test our step:
+
+![Image](https://github.com/user-attachments/assets/c6173b3b-4b07-46cd-b909-8cf8b0ab57b9)
+
+Success! A new device is registered in the MongoDB database "**mqtt_registery**" inside the collection "**device_registry**" and a two-word combination is assigned to it (here: ```frozen-bold```).
+
+This can also be seen from our MongoDB Client:
+
+![Image](https://github.com/user-attachments/assets/ce5f8ba9-0a1c-4441-9575-3404b90579bf)
 
 == WE ARE HERE ==
 

@@ -12,5 +12,8 @@ See https://sliplane.io/app/projects/project_1i5szbhfgm12
 
 See [README.md](./100/README.md)
 
+## 200 - Initialize Database and Collections
+
+See [README.md](./200/README.md)
 
 MORE

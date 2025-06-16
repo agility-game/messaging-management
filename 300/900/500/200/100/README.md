@@ -133,8 +133,30 @@ This can also be seen from our MongoDB Client:
 4. **Add Response to EMQX Broker Logic**
   - Add "Node.js" step for custom code:​​​​​​​​​​​​​​​​
 
+== IMAGE GOES HERE ==
 
-  
+```
+// HTTP Response (Send response back to EMQX)
+export default defineComponent({
+ async run({ steps, $ }) {
+   const result = steps.generate_name.$return_value;
+
+   await $.respond({
+     status: result.success ? 200 : 400,
+     headers: {
+       "Content-Type": "application/json"
+     },
+     body: {
+       success: result.success,
+       assigned_name: result.assigned_name,
+       message: result.message,
+       timestamp: new Date().toISOString()
+     }
+   });
+ }
+});
+```
+
 == WE ARE HERE ==
 
 MORE

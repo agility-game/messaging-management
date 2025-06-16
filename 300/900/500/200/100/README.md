@@ -38,15 +38,17 @@ Success!!
 
 ![Image](https://github.com/user-attachments/assets/e0b77120-bf73-4254-b29b-76cd2817ea7f)
 
+Skip **Test Connection** if it fails.
+
 ![Image](https://github.com/user-attachments/assets/55d7ae47-f4e3-4e3f-a737-9ba7aafc2eee)
 
 Choose database **mqtt_registry**:
 
 ![Image](https://github.com/user-attachments/assets/d1102c42-79ab-4e1a-a7f9-be33fc152bc7)
 
-== WE ARE HERE ==
-
 4. **Add Name Generation Logic**
   - Add "Node.js" step for custom code:​​​​​​​​​​​​​​​​
+
+== WE ARE HERE ==
 
 MORE

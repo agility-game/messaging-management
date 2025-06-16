@@ -1,9 +1,14 @@
 ## 100 - Architecture Overview
 
-The data flow will be:
+The data flows will be:
 **Pepper C1 MUX Reader** → **LavinMQ (CloudAMQP)** → **Home Assistant**
 
-
+```
+MQTT Client → EMQX Broker → Pipedream Webhook → Sliplane MongoDB**
+Publishes     Triggers Rule Processes Data      Updates
+Register      & Sends HTTP  & Generates Name    Registry
+Message       Request       via Workflow        Collection
+```
 
 ## Step 2: Configure Home Assistant MQTT Integration
 

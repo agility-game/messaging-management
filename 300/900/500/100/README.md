@@ -1,6 +1,8 @@
 # 100 - Pipedream Environment Variables
 
-In each Pipedream workflow, set these environment variables:
+In your Pipedream project (here: [Agility Game](https://pipedream.com/@wvanheemstra/projects/proj_e5smjgK/variables)), set these environment variables:
+
+![Image](https://github.com/user-attachments/assets/022035dc-2b89-418b-ad52-15d1f3126ed5)
 
 ```
 SLIPLANE_MONGODB_HOST=mongo-tafo.sliplane.app

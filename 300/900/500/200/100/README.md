@@ -215,6 +215,28 @@ export default defineComponent({
 });
 ```
 
-== WE ARE HERE ==
+6. **Deploy the workflow**
 
-MORE
+![Image](https://github.com/user-attachments/assets/80129162-4eba-4285-99c9-3db8bb47300b)
+
+And test the deployed workflow (https://eoh8781e35at724.m.pipedream.net):
+
+![Image](https://github.com/user-attachments/assets/0fbf992c-f3cd-47ec-8451-f8dc85dac47d)
+
+We sent a sample device configuration:
+
+```
+{
+    "device_type": "Eccel Pepper C1 MUX",
+    "mac_address": "AA:BB:CC:DD:EE:FF",
+    "location": "office",
+    "ip_address": "192.168.1.100",
+    "firmware_version": "1.2.3"
+}
+```
+
+And the workflow shows successful!
+
+![Image](https://github.com/user-attachments/assets/4109b4b7-a26b-4f5e-a300-3efa1d138982)
+
+== WE ARE HERE ==

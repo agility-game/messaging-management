@@ -239,4 +239,8 @@ And the workflow shows successful!
 
 ![Image](https://github.com/user-attachments/assets/4109b4b7-a26b-4f5e-a300-3efa1d138982)
 
+Also when looked at from the MongoDB Client:
+
+![Image](https://github.com/user-attachments/assets/e367889f-e09b-409c-a015-69621f23b88c)
+
 == WE ARE HERE ==

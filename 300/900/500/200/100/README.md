@@ -40,6 +40,10 @@ Success!!
 
 ![Image](https://github.com/user-attachments/assets/55d7ae47-f4e3-4e3f-a737-9ba7aafc2eee)
 
+Choose database **mqtt_registry**:
+
+![Image](https://github.com/user-attachments/assets/d1102c42-79ab-4e1a-a7f9-be33fc152bc7)
+
 == WE ARE HERE ==
 
 4. **Add Name Generation Logic**

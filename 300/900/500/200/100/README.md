@@ -161,6 +161,59 @@ export default defineComponent({
 });
 ```
 
+5. **Add MQQT Response to EMQX Broker Logic**
+  - Add "Node.js" step for custom code:​​​​​​​​​​​​​​​​
+
+![Image](https://github.com/user-attachments/assets/84a3aac8-a83a-4558-93dd-938ef9f0cc68)  
+
+```
+// Send MQTT Response (if you have MQTT client capability)
+export default defineComponent({
+ async run({ steps, $ }) {
+   const result = steps.generate_name.$return_value;
+   const originalClientId = result.device_data.original_client_id;
+
+   // This would require MQTT client library in Pipedream
+   // For now, we'll use HTTP to EMQX REST API to publish response
+
+   const emqxApiUrl = process.env.EMQX_API_URL; // e.g., https://your-emqx.com/api/v5
+   const emqxApiKey = process.env.EMQX_API_KEY;
+
+   const publishPayload = {
+     topic: `device/register/response/${originalClientId}`,
+     payload: JSON.stringify({
+       success: result.success,
+       assigned_name: result.assigned_name,
+       message: result.message,
+       timestamp: new Date().toISOString()
+     }),
+     qos: 1,
+     retain: false
+   };
+
+   try {
+     const response = await fetch(`${emqxApiUrl}/publish`, {
+       method: 'POST',
+       headers: {
+         'Authorization': `Bearer ${emqxApiKey}`,
+         'Content-Type': 'application/json'
+       },
+       body: JSON.stringify(publishPayload)
+     });
+
+     return {
+       mqtt_published: response.ok,
+       response_topic: publishPayload.topic
+     };
+   } catch (error) {
+     return {
+       mqtt_published: false,
+       error: error.message
+     };
+   }
+ }
+});
+```
 
 == WE ARE HERE ==
 

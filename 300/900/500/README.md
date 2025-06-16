@@ -1,16 +1,5 @@
-# 500 - Setting Up MongoDB on Sliplane
+# 400 - Configuring Home Assistant
 
-To store all information that is transmitted through the messaging management system, a hosted MongoDB database instance is used.
-
-The MongoDB database is hosted on Sliplane, a Software-as-a-Service that is a portal to Hetzner cloud hosting, making it easier to deploy applications.
-
-See https://sliplane.io/app/projects/project_1i5szbhfgm12
-
-![Image](https://github.com/user-attachments/assets/9dfef88e-c82a-4b4c-a7d6-14e97f99a2ca)
-
-## 100 - Testing with Sliplane MongoDB
+## 100 - Configuration files
 
 See [README.md](./100/README.md)
-
-
-MORE

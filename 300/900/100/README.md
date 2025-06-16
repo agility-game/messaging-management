@@ -4,7 +4,7 @@ The data flows will be:
 **Pepper C1 MUX Reader** → **LavinMQ (CloudAMQP)** → **Home Assistant**
 
 ```
-MQTT Client → EMQX Broker → Pipedream Webhook → Sliplane MongoDB**
+MQTT Client → EMQX Broker → Pipedream Webhook → Sliplane MongoDB
 Publishes     Triggers Rule Processes Data      Updates
 Register      & Sends HTTP  & Generates Name    Registry
 Message       Request       via Workflow        Collection

@@ -34,3 +34,8 @@ Name the new collection **device_registry**:
 It will look like this:
 
 ![Image](https://github.com/user-attachments/assets/38acc6f4-f23a-45b3-995f-a4837882f4a9)
+
+## 400 - Check for new entries
+
+ - Connect to: `mongodb://username:password@mongo-taco.sliplane.app:27017/mqtt_registry`
+ - Check `device_registry` collection for new entries

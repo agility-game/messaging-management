@@ -24,9 +24,13 @@ See [README.md](./500/README.md)
 
 See [README.md](./500/README.md)
 
+## 600 - Setting Up EMQX Broker
+
+See [README.md](./600/README.md)
+
 == WE ARE HERE ==
 
-## 600 - Configuring Home Assistant
+## 700 - Configuring Home Assistant
 
 See [README.md](./400/README.md)
 

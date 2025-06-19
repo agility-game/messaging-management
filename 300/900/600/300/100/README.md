@@ -49,4 +49,8 @@ Now choose **Web Service** -> **HTTP** on EMQX's Data Integration page, which al
 
 Click **Test** to check if the triggering of the webhook is working successfully.
 
-MORE
+![Image](https://github.com/user-attachments/assets/738600bf-029b-4380-b94e-544c1b1b624a)
+
+We see a dialogue in the uppr right corner **Connector Available**, hence the test is successful.
+
+

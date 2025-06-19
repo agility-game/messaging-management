@@ -1,6 +1,6 @@
 # 100 - Device Registration Workflow
 
-Architecture Overview
+Overview
 
 ```mermaid
 graph TD

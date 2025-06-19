@@ -65,17 +65,27 @@ Now it is time to add a Rule, by clicking on **+ New Rule**.
 Use the following for SQL:
 
 ```sql
-SELECT
-  *
-FROM
-  "t/#"
+SELECT 
+  clientid,
+  payload.device_type as device_type,
+  payload.mac_address as mac_address,
+  payload.location as location,
+  payload.ip_address as ip_address,
+  payload.firmware_version as firmware_version,
+  now_timestamp('millisecond') as timestamp
+FROM 
+  "device/register"
+WHERE 
+  payload.device_type != ''
 ```
 
 Then above SQL statement does the following:
 
-...
+- It references the ```device/register``` MQTT topic defined on EMQX Broker used for registration of a device.
+- It provides the data (here: ```payload```), as well as the client id that was sent in the MQTT message to the above topic and creates a timestamp.
+- It won't progress if the ```device_type``` is empty.
 
-
+Now for the purpose of testing our SQL, enable **...** and ...
 
 MORE
 

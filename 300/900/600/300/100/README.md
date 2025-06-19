@@ -208,7 +208,9 @@ Now looking in the logs of the EMQX Broker, let's see if the MQTT message contai
 
 ![Image](https://github.com/user-attachments/assets/89a63cd9-446f-48c7-b5cc-805087885ac3)
 
+**Note**: Make sure the Client ID (here: ```ESP32_90BEDC```, which is our Eccel Pepper C1 MUX Reader) in EMQX Broker has permissions for Subscribe & Publish on the topic of ```device/register```:
 
+![Image](https://github.com/user-attachments/assets/5fd00925-fc6a-42e7-8f75-c59a7479924e)
 
 
 MORE

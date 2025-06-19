@@ -182,7 +182,7 @@ In addition, scroll down and fill in the following:
 
 Click **Confirm**.
 
-After a success message, you will see the newly created Rule (here: ```r-q3297d6a-b88268```) and its reference to its Connector (here: ```c-q3297d6a-00666d```):
+After a success message, you will see the newly created Rule (here: ```r-q3297d6a-b88268```) and its reference to its Connector (here: ```c-q3297d6a-00666d```). In addition, see that a new Action (here: ```a-q3297d6a-031830```) has been created based on the Connector and the Rule:
 
 ![Image](https://github.com/user-attachments/assets/63870ce5-c748-4e58-882c-581d001a7946)
 

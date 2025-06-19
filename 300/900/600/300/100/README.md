@@ -212,6 +212,9 @@ Now looking in the logs of the EMQX Broker, let's see if the MQTT message contai
 
 ![Image](https://github.com/user-attachments/assets/5fd00925-fc6a-42e7-8f75-c59a7479924e)
 
+**Note**: We can test the process from within EMQX Broker first as follows:
+
+![Image](https://github.com/user-attachments/assets/4da7eacb-ed5e-421c-840f-85c67ccf5716)
 
 MORE
 

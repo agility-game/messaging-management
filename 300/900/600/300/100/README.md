@@ -51,6 +51,13 @@ Click **Test** to check if the triggering of the webhook is working successfully
 
 ![Image](https://github.com/user-attachments/assets/738600bf-029b-4380-b94e-544c1b1b624a)
 
-We see a dialogue in the uppr right corner **Connector Available**, hence the test is successful.
+We see a dialogue in the upper right corner **Connector Available**, hence the test is successful.
+
+Click **New** to save the newly created connector (here: ```c-q3297d6a-00666d```).
+
+
+
+
+MORE
 
 

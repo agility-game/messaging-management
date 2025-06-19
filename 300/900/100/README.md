@@ -1,7 +1,7 @@
 ## 100 - Architecture Overview
 
 The data flows will be:
-**Pepper C1 MUX Reader** → **LavinMQ (CloudAMQP)** → **Home Assistant**
+**Pepper C1 MUX Reader** → **EMQX Broker** → **Pipedream** → **Sliplane: MongoDB** → **Home Assistant**
 
 ```
 MQTT Client → EMQX Broker → Pipedream Webhook → Sliplane MongoDB

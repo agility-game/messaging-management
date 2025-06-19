@@ -45,7 +45,7 @@ Now choose **Web Service** -> **HTTP** on EMQX's Data Integration page, which al
 
 ![Image](https://github.com/user-attachments/assets/4270d83c-686c-43f2-9055-22a727680907)
 
-**Note**: Make sure to have ```Enable TLS``` Enabled, and ```Verify TLS``` Disabled.
+**Note**: Make sure to have ```Enable TLS``` **enabled**, and ```TLS Verify``` **disabled**.
 
 Click **Test** to check if the triggering of the webhook is working successfully.
 

@@ -93,6 +93,19 @@ Now for the purpose of testing our SQL, enable **Try It Out**.
 
 You should see that the topic is now set to ```device/register```.
 
+Scroll down and fill in the fields as follows:
+
+- Data Source: **Message Publish**
+
+![Image](https://github.com/user-attachments/assets/c4918519-e1af-4cf7-89fe-3de0a15e9951)
+
+- ...
+
+
+
+
+
+
 Click **Next**.
 
 MORE

@@ -182,6 +182,16 @@ In addition, scroll down and fill in the following:
 
 Click **Confirm**.
 
+After a success message, you will see the newly created Rule (here: ```r-q3297d6a-b88268```) and its reference to its Connector (here: ```c-q3297d6a-00666d```):
+
+![Image](https://github.com/user-attachments/assets/63870ce5-c748-4e58-882c-581d001a7946)
+
+Now let us try to have an MQTT message that was published by Eccel Pepper C1 MUX Reader be picked up by EMQX Broker, processed by our Rule "Register Device", triggering the Webhook at PipeDream's Workflow for "Register Device" which calls Sliplane to store the device with a unique two-word Client ID in MongoDB, and return the registration of the device with this Client ID.
+
+Exciting!!
+
+TO DO
+
 
 MORE
 

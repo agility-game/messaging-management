@@ -190,7 +190,22 @@ Now let us try to have an MQTT message that was published by Eccel Pepper C1 MUX
 
 Exciting!!
 
-TO DO
+First, after having powered on the Eccel Pepper C1 MUX Reader it shows that it has conencted successfully to the EMQX Broker:
+
+![Image](https://github.com/user-attachments/assets/db777bd4-0564-4f16-999c-15d51c8160b5)
+
+Then, when we bring an NFC card close to one of the Antenna's, the Eccel Pepper C1 MUX Reader flashes that it has read the NFC Tag.
+
+Now looking in the logs of the EMQX Broker, let's see if the MQTT message containing the Tag's data has been published successfully:
+
+**Note**: Make sure the Eccel Pepper C1 MUX Reader is subscribed to ```device/register```:
+
+![Image](https://github.com/user-attachments/assets/8c6bd60a-cd2d-4036-b9a1-4d9be1977ed7)
+
+=== Does it really need to be subscribed to ```device/register``` if it only publishes to this topic? TO DO: Find out! ===
+
+
+
 
 
 MORE

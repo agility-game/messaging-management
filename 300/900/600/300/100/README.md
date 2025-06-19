@@ -103,7 +103,6 @@ Scroll down and fill in the fields as follows:
 - Username: **tlkaaxtf:tlkaaxtf** (as defined in EMQX Broker under authentication)
 - Topic: **device/register**
 - Quality of Service (QoS): **1** (meaning we expect confirmation by Pipedream on retrieval of the message)
-
 - Payload:
 
    ```json

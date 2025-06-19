@@ -216,6 +216,12 @@ Now looking in the logs of the EMQX Broker, let's see if the MQTT message contai
 
 ![Image](https://github.com/user-attachments/assets/4da7eacb-ed5e-421c-840f-85c67ccf5716)
 
+Push **Publish**:
+
+![Image](https://github.com/user-attachments/assets/97f4bc90-9b8f-441b-bcc2-3d4e1c7a80a8)
+
+
+
 MORE
 
 

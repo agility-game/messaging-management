@@ -117,7 +117,11 @@ Scroll down and fill in the fields as follows:
 
 For testing purposes we set arbitrary values as payload. In practice, this data will come from Eccel Pepper C1 MUX Reader.
 
-=== Image Goes Here ===
+![Image](https://github.com/user-attachments/assets/25fe760b-d23a-4288-ba5b-6801c0c7cc79)
+
+Click **Test**.
+
+=== IMAGE GOES HERE ===
 
 Click **Next**.
 

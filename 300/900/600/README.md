@@ -71,4 +71,6 @@ See https://docs.emqx.com/en/cloud/latest/deployments/authz_overview.html
 
 ## 300 - Triggering a Pipedream Workflow from EMQX Broker
 
+See also [Data Integration Overview](https://docs.emqx.com/en/cloud/latest/data_integration/introduction.html).
+
 MORE

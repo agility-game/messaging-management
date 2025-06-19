@@ -204,6 +204,9 @@ Now looking in the logs of the EMQX Broker, let's see if the MQTT message contai
 
 === Does it really need to be subscribed to ```device/register``` if it only publishes to this topic? TO DO: Find out! ===
 
+**Note**: Make sure the User (here: ```tlkaaxtf:tlkaaxtf```) in EMQX Broker has permissions for Subscribe & Publish on the topic of ```device/register```:
+
+![Image](https://github.com/user-attachments/assets/89a63cd9-446f-48c7-b5cc-805087885ac3)
 
 
 

@@ -22,7 +22,7 @@ graph TD
     style H fill:#fff3e0
 ```
 
-We'll be usign EMQX Broker's Rule Engine.
+We'll be using EMQX Broker's Rule Engine.
 
 The Rule Engine in EMQX MQTT Broker is a software component that allows users to define and execute rules based on MQTT messages. It can be used to extract, filter, enrich, and transform MQTT messages, as well as trigger actions based on specific criteria. This helps to reduce manual intervention and accelerate data integration and application development.
 

@@ -41,7 +41,7 @@ See https://pipedream.com/@wvanheemstra/projects/proj_e5smjgK/device-registratio
 
 The URL of the Webhook is: https://eoh8781e35at724.m.pipedream.net
 
-Now choose HTTP on EMQX's Data Integration page, which allows you to enter the previously found URL of the Webhook in Pipedream.
+Now choose **Web Service** -> **HTTP** on EMQX's Data Integration page, which allows you to enter the previously found URL of the Webhook in Pipedream.
 
 ![Image](https://github.com/user-attachments/assets/686f785d-72ed-47db-ad21-a02bc32ae081)
 

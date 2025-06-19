@@ -28,4 +28,12 @@ The Rule Engine in EMQX MQTT Broker is a software component that allows users to
 
 See also [Getting Started with Rule Engine in MQTT Broker: A Quick Guide | EMQ](https://frshl.ink/EFMt).
 
+**Note**: The Rule Engine is supported in EMQX Cloud. It has been officially renamed to '**Data Integration**'.
+
+
+![Image](https://github.com/user-attachments/assets/1b2cd14d-e393-46fd-a261-0e5439127877)
+
+
+
+
 MORE

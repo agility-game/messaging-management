@@ -30,7 +30,6 @@ See also [Getting Started with Rule Engine in MQTT Broker: A Quick Guide | EMQ](
 
 **Note**: The Rule Engine is supported in EMQX Cloud. It has been officially renamed to '**Data Integration**'.
 
-
 ![Image](https://github.com/user-attachments/assets/1b2cd14d-e393-46fd-a261-0e5439127877)
 
 Lookup the URL of the Webhook on Pipedream to be used for "Device Registration":
@@ -55,6 +54,26 @@ We see a dialogue in the upper right corner **Connector Available**, hence the t
 
 Click **New** to save the newly created connector (here: ```c-q3297d6a-00666d```).
 
+You will see the new connector listed.
+
+![Image](https://github.com/user-attachments/assets/eb202044-8c76-425e-adf1-da8feb08819c)
+
+Now it is time to add a Rule, by clicking on **+ New Rule**.
+
+![Image](https://github.com/user-attachments/assets/cbff1179-fa04-4e2c-b945-6c92e92736a1)
+
+Use the following for SQL:
+
+```sql
+SELECT
+  *
+FROM
+  "t/#"
+```
+
+Then above SQL statement does the following:
+
+...
 
 
 

@@ -87,7 +87,7 @@ Then above SQL statement does the following:
 
 In **Note**, write ```Device Registration``` for ease of reference.
 
-Now for the purpose of testing our SQL, enable **...**.
+Now for the purpose of testing our SQL, enable **Try It Out**.
 
 ![Image](https://github.com/user-attachments/assets/ca8080c0-f6bb-4cdf-a1a4-ea28c61a33a4)
 

@@ -99,12 +99,26 @@ Scroll down and fill in the fields as follows:
 
 ![Image](https://github.com/user-attachments/assets/c4918519-e1af-4cf7-89fe-3de0a15e9951)
 
-- ...
+- Client ID: **undefined** (as we still have to register the device, which will set a Client ID)
+- Username: **tlkaaxtf:tlkaaxtf** (as defined in EMQX Broker under authentication)
+- Topic: **device/register**
+- Quality of Service (QoS): **1** (meaning we expect confirmation by Pipedream on retrieval of the message)
 
+- Payload:
 
+   ```json
+   {
+     "device_type": "Eccel Pepper C1 MUX",
+     "mac_address": "AA:BB:CC:DD:EE:FF",
+     "location": "office",
+     "ip_address": "192.168.1.100",
+     "firmware_version": "1.2.3"
+   }
+   ```
 
+For testing purposes we set arbitrary values as payload. In practice, this data will come from Eccel Pepper C1 MUX Reader.
 
-
+=== Image Goes Here ===
 
 Click **Next**.
 

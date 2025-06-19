@@ -121,7 +121,24 @@ For testing purposes we set arbitrary values as payload. In practice, this data 
 
 Click **Test**.
 
-=== IMAGE GOES HERE ===
+![Image](https://github.com/user-attachments/assets/6f0884fb-bf58-4232-aa39-281675c34d14)
+
+We see **Test Passed** and the following Output Result:
+
+```json
+{
+  "clientid": "undefined",
+  "device_type": "Eccel Pepper C1 MUX",
+  "firmware_version": "1.2.3",
+  "ip_address": "192.168.1.100",
+  "location": "office",
+  "mac_address": "AA:BB:CC:DD:EE:FF",
+  "timestamp": 1750338400048
+}
+
+```
+
+Congratulations!
 
 Click **Next**.
 

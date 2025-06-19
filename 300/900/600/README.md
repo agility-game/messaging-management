@@ -68,3 +68,7 @@ See https://docs.emqx.com/en/cloud/latest/deployments/authz_overview.html
   [Connectors Settings](https://docs.emqx.com/en/cloud/latest/data_integration/connectors.html)
 
   [Data Integration](https://docs.emqx.com/en/cloud/latest/data_integration/introduction.html)
+
+## 300 - Triggering a Pipedream Workflow from EMQX Broker
+
+MORE

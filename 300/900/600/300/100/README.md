@@ -33,7 +33,7 @@ See also [Getting Started with Rule Engine in MQTT Broker: A Quick Guide | EMQ](
 
 ![Image](https://github.com/user-attachments/assets/1b2cd14d-e393-46fd-a261-0e5439127877)
 
-Lookup the URL of the Webhook on Pipedream to be used for "Register Device":
+Lookup the URL of the Webhook on Pipedream to be used for "Device Registration":
 
 See https://pipedream.com/@wvanheemstra/projects/proj_e5smjgK/device-registration-p_7NCZ6WK/inspect
 

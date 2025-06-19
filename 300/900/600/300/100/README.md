@@ -142,6 +142,37 @@ Congratulations!
 
 Click **Next**.
 
+Next, we will be prompted which Connector we want to be using with our newly created Rule.
+
+![Image](https://github.com/user-attachments/assets/431812bd-9525-4910-a837-22449ffbd033)
+
+We select the previously created Connector (here ```c-q3297d6a-00666d```, that connects with PipeDreams's Webhook for "Device Registration").
+
+Fill in the fields as follows:
+
+- Action Type: **HTTP Server** (as we are using a Webhook call)
+- Action Name: **a-q3297d6a-031830** (which is auto-generated and unique)
+- Note: **Device Registration**
+- URL: ```Leave this empty, we are not specifying a deeper path for PipeDream's WebHook for "Device Registration"```
+- Method: **POST** (as we expect a response from the PipeDream's Webhook for "Device Registration")
+
+Leave all Headers at their default values.
+
+![Image](https://github.com/user-attachments/assets/f7928532-1420-4c45-94ba-434d2aafa28d)
+
+In addition, scroll down and fill in th following:
+
+- Body: 
+
+  ```json
+
+  ```
+
+- ...
+
+Click **Confirm**.
+
+
 MORE
 
 

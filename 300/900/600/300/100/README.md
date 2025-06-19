@@ -85,7 +85,15 @@ Then above SQL statement does the following:
 - It provides the data (here: ```payload```), as well as the client id that was sent in the MQTT message to the above topic and creates a timestamp.
 - It won't progress if the ```device_type``` is empty.
 
-Now for the purpose of testing our SQL, enable **...** and ...
+In **Note**, write ```Device Registration``` for ease of reference.
+
+Now for the purpose of testing our SQL, enable **...**.
+
+![Image](https://github.com/user-attachments/assets/ca8080c0-f6bb-4cdf-a1a4-ea28c61a33a4)
+
+You should see that the topic is now set to ```device/register```.
+
+Click **Next**.
 
 MORE
 

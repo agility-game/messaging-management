@@ -160,15 +160,25 @@ Leave all Headers at their default values.
 
 ![Image](https://github.com/user-attachments/assets/f7928532-1420-4c45-94ba-434d2aafa28d)
 
-In addition, scroll down and fill in th following:
+In addition, scroll down and fill in the following:
 
 - Body: 
 
   ```json
-
+  {
+    "client_id": "${clientid}",
+    "device_type": "${device_type}",
+    "mac_address": "${mac_address}",
+    "location": "${location}",
+    "ip_address": "${ip_address}",
+    "firmware_version": "${firmware_version}",
+    "timestamp": "${timestamp}"
+  }
   ```
 
-- ...
+- Advanced Settings: ```Leave all default values as they are.```
+
+![Image](https://github.com/user-attachments/assets/17d381fc-921f-42d3-95ed-4075f08218f1)
 
 Click **Confirm**.
 

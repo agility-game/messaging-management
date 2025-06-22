@@ -1,7 +1,7 @@
 messaging-management
 # Messaging Management
 
-> Slugline
+> Messaging Management handles all MQTT routing, message transformation, and communication patterns.
 
 - [DNS](./DNS.md)
 - [Documentation](./DOCUMENTATION.md)

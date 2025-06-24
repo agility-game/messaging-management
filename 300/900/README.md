@@ -18,7 +18,7 @@ See [README.md](./300/README.md)
 
 ## 400 - Setting Up MongoDB on Sliplane
 
-See [README.md](./500/README.md)
+See [README.md](./400/README.md)
 
 ## 500 - Setting Up Workflows on Pipedream
 

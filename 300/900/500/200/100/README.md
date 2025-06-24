@@ -183,7 +183,7 @@ export default defineComponent({
 });
 ```
 
-5. **Add MQQT Response to EMQX Broker Logic**
+5. **Add MQTT Response to EMQX Broker Logic**
   - Add "Node.js" step for custom code:​​​​​​​​​​​​​​​​
 
 ![Image](https://github.com/user-attachments/assets/84a3aac8-a83a-4558-93dd-938ef9f0cc68)  

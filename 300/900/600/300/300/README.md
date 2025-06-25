@@ -153,7 +153,7 @@ We select the previously created Connector (here ```c-q3297d6a-514a0a```, that c
 Fill in the fields as follows:
 
 - Action Type: **HTTP Server** (as we are using a Webhook call)
-- Action Name: **a-q3297d6a-031830** (which is auto-generated and unique)
+- Action Name: **a-q3297d6a-f104ff** (which is auto-generated and unique)
 - Note: **Field v1 Register**
 - URL: ```Leave this empty, we are not specifying a deeper path for PipeDream's WebHook for "Field v1 Register"```
 - Method: **POST** (as we expect a response from the PipeDream's Webhook for "Field v1 Register")
@@ -185,7 +185,7 @@ In addition, scroll down and fill in the following:
 
 Click **Confirm**.
 
-After a success message, you will see the newly created Rule (here: ```Xr-q3297d6a-b88268```) and its reference to its Connector (here: ```c-q3297d6a-514a0a```). In addition, see that a new Action (here: ```Xa-q3297d6a-031830```) has been created based on the Connector and the Rule:
+After a success message, you will see the newly created Rule (here: ```r-q3297d6a-f5b050```) and its reference to its Connector (here: ```c-q3297d6a-514a0a```). In addition, see that a new Action (here: ```a-q3297d6a-f104ff```) has been created based on the Connector and the Rule:
 
 ![Image](OUTOFDATEhttps://github.com/user-attachments/assets/63870ce5-c748-4e58-882c-581d001a7946)
 

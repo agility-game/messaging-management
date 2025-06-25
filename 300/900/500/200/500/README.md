@@ -241,7 +241,7 @@ export default defineComponent({
 
 ![Image](https://github.com/user-attachments/assets/80129162-4eba-4285-99c9-3db8bb47300b)
 
-And test the deployed workflow (https://eoh8781e35at724.m.pipedream.net):
+And test the deployed workflow (https://eoei8q67ov9c8ic.m.pipedream.net/):
 
 ![Image](https://github.com/user-attachments/assets/0fbf992c-f3cd-47ec-8451-f8dc85dac47d)
 

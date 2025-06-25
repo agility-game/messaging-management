@@ -34,15 +34,15 @@ See also [Getting Started with Rule Engine in MQTT Broker: A Quick Guide | EMQ](
 
 Lookup the URL of the Webhook on Pipedream to be used for "Field Registration":
 
-See https://pipedream.com/@wvanheemstra/projects/proj_e5smjgK/device-registration-p_7NCZ6WK/inspect
+See https://pipedream.com/@wvanheemstra/projects/proj_e5smjgK/field-registration-p_LQC6PmG/inspect
 
-![Image](https://github.com/user-attachments/assets/8de941fa-e382-4b60-b3a1-9e797c21ac20)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/8de941fa-e382-4b60-b3a1-9e797c21ac20)
 
-The URL of the Webhook is: https://eoh8781e35at724.m.pipedream.net
+The URL of the Webhook is: https://eoei8q67ov9c8ic.m.pipedream.net
 
 Now choose **Web Service** -> **HTTP** on EMQX's Data Integration page, which allows you to enter the previously found URL of the Webhook in Pipedream.
 
-![Image](https://github.com/user-attachments/assets/4270d83c-686c-43f2-9055-22a727680907)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/4270d83c-686c-43f2-9055-22a727680907)
 
 **Note**: Make sure to have ```Enable TLS``` **enabled**, and ```TLS Verify``` **disabled**.
 

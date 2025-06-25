@@ -148,7 +148,7 @@ Next, we will be prompted which Connector we want to be using with our newly cre
 
 ![Image](https://github.com/user-attachments/assets/431812bd-9525-4910-a837-22449ffbd033)
 
-We select the previously created Connector (here ```c-q3297d6a-00666d```, that connects with PipeDreams's Webhook for "Field v1 Register").
+We select the previously created Connector (here ```c-q3297d6a-514a0a```, that connects with PipeDreams's Webhook for "Field v1 Register").
 
 Fill in the fields as follows:
 
@@ -185,9 +185,9 @@ In addition, scroll down and fill in the following:
 
 Click **Confirm**.
 
-After a success message, you will see the newly created Rule (here: ```r-q3297d6a-b88268```) and its reference to its Connector (here: ```c-q3297d6a-00666d```). In addition, see that a new Action (here: ```a-q3297d6a-031830```) has been created based on the Connector and the Rule:
+After a success message, you will see the newly created Rule (here: ```Xr-q3297d6a-b88268```) and its reference to its Connector (here: ```c-q3297d6a-514a0a```). In addition, see that a new Action (here: ```Xa-q3297d6a-031830```) has been created based on the Connector and the Rule:
 
-![Image](https://github.com/user-attachments/assets/63870ce5-c748-4e58-882c-581d001a7946)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/63870ce5-c748-4e58-882c-581d001a7946)
 
 Now let us try to have an MQTT message that was published by Eccel Pepper C1 MUX Reader be picked up by EMQX Broker, processed by our Rule "Register Device", triggering the Webhook at PipeDream's Workflow for "Register Device" which calls Sliplane to store the device with a unique two-word Client ID in MongoDB, and return the registration of the device with this Client ID.
 
@@ -195,33 +195,33 @@ Exciting!!
 
 First, after having powered on the Eccel Pepper C1 MUX Reader it shows that it has conencted successfully to the EMQX Broker:
 
-![Image](https://github.com/user-attachments/assets/db777bd4-0564-4f16-999c-15d51c8160b5)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/db777bd4-0564-4f16-999c-15d51c8160b5)
 
 Then, when we bring an NFC card close to one of the Antenna's, the Eccel Pepper C1 MUX Reader flashes that it has read the NFC Tag.
 
 Now looking in the logs of the EMQX Broker, let's see if the MQTT message containing the Tag's data has been published successfully:
 
-**Note**: Make sure the Eccel Pepper C1 MUX Reader is subscribed to ```device/register```:
+**Note**: Make sure the Eccel Pepper C1 MUX Reader is subscribed to ```fields/v1/publish```:
 
-![Image](https://github.com/user-attachments/assets/8c6bd60a-cd2d-4036-b9a1-4d9be1977ed7)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/8c6bd60a-cd2d-4036-b9a1-4d9be1977ed7)
 
-=== Does it really need to be subscribed to ```device/register``` if it only publishes to this topic? TO DO: Find out! ===
+=== Does it really need to be subscribed to ```fields/v1/publish``` if it only publishes to this topic? TO DO: Find out! ===
 
-**Note**: Make sure the User (here: ```tlkaaxtf:tlkaaxtf```) in EMQX Broker has permissions for Subscribe & Publish on the topic of ```device/register```:
+**Note**: Make sure the User (here: ```tlkaaxtf:tlkaaxtf```) in EMQX Broker has permissions for Publish on the topic of ```fields/v1/publish```:
 
-![Image](https://github.com/user-attachments/assets/89a63cd9-446f-48c7-b5cc-805087885ac3)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/89a63cd9-446f-48c7-b5cc-805087885ac3)
 
-**Note**: Make sure the Client ID (here: ```ESP32_90BEDC```, which is our Eccel Pepper C1 MUX Reader) in EMQX Broker has permissions for Subscribe & Publish on the topic of ```device/register```:
+**Note**: Make sure the Client ID (here: ```ESP32_90BEDC```, which is our Eccel Pepper C1 MUX Reader) in EMQX Broker has permissions for Subscribe on the topic of ```fields/v1/subscribe```:
 
-![Image](https://github.com/user-attachments/assets/5fd00925-fc6a-42e7-8f75-c59a7479924e)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/5fd00925-fc6a-42e7-8f75-c59a7479924e)
 
 **Note**: We can test the process from within EMQX Broker first as follows:
 
-![Image](https://github.com/user-attachments/assets/4da7eacb-ed5e-421c-840f-85c67ccf5716)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/4da7eacb-ed5e-421c-840f-85c67ccf5716)
 
 Push **Publish**:
 
-![Image](https://github.com/user-attachments/assets/97f4bc90-9b8f-441b-bcc2-3d4e1c7a80a8)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/97f4bc90-9b8f-441b-bcc2-3d4e1c7a80a8)
 
 
 

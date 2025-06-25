@@ -32,8 +32,8 @@ In the Pepper C1 web interface:
    - **Port**: 8883
    - **Username**: Your EMQX username (here: ```tlkaaxtf:tlkaaxtf```)
    - **Password**: Your EMQX password (see https://api.cloudamqp.com/console/36c83daa-48f9-4a5a-9b3a-edf871ac74bb/details)
-   - **Output topic**: ```out_topic```
-   - **Input topic**: ```in_topic```
+   - **Output topic**: ```out_topic``` (in production, replace by ```fields/v1/publish```)
+   - **Input topic**: ```in_topic``` (in production, replace by ```fields/v1/subscribe```)
 4. Click **Save & Restart**
 
 ### Testing the MQTT connection using MQTTX

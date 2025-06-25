@@ -25,7 +25,7 @@ graph TD
 1. **Go to Pipedream Dashboard**
   - Visit [https://pipedream.com](https://pipedream.com)
   - Sign in to your account (here: using email ```wvanheemstra@icloud.com```)
-  - Go to project "[Agility Game]()"
+  - Go to project "[Agility Game](https://pipedream.com/@wvanheemstra/projects/proj_e5smjgK/tree)"
   - Click "New Workflow"
   - Name it "Field Registration"
 

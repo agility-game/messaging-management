@@ -23,3 +23,7 @@ See [README.md](./500/README.md)
 ## 600 - Player Registration Workflow
 
 See [README.md](./600/README.md)
+
+## 700 - Card Registration Workflow
+
+See [README.md](./700/README.md)

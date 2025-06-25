@@ -32,7 +32,7 @@ See also [Getting Started with Rule Engine in MQTT Broker: A Quick Guide | EMQ](
 
 ![Image](https://github.com/user-attachments/assets/1b2cd14d-e393-46fd-a261-0e5439127877)
 
-Lookup the URL of the Webhook on Pipedream to be used for "Field Registration":
+Lookup the URL of the Webhook on Pipedream to be used for "Field v1 Register":
 
 See https://pipedream.com/@wvanheemstra/projects/proj_e5smjgK/field-registration-p_LQC6PmG/inspect
 
@@ -52,7 +52,7 @@ Click **Test** to check if the triggering of the webhook is working successfully
 
 We see a dialogue in the upper right corner **Connector Available**, hence the test is successful.
 
-Click **New** to save the newly created connector (here: ```c-q3297d6a-514a0a```).
+Click **New** to save the newly created connector (here: ```c-q3297d6a-f168f6```).
 
 You will see the new connector listed.
 
@@ -148,7 +148,7 @@ Next, we will be prompted which Connector we want to be using with our newly cre
 
 ![Image](https://github.com/user-attachments/assets/431812bd-9525-4910-a837-22449ffbd033)
 
-We select the previously created Connector (here ```c-q3297d6a-514a0a```, that connects with PipeDreams's Webhook for "Field v1 Register").
+We select the previously created Connector (here ```c-q3297d6a-f168f6```, that connects with PipeDreams's Webhook for "Field v1 Register").
 
 Fill in the fields as follows:
 
@@ -185,7 +185,7 @@ In addition, scroll down and fill in the following:
 
 Click **Confirm**.
 
-After a success message, you will see the newly created Rule (here: ```r-q3297d6a-f5b050```) and its reference to its Connector (here: ```c-q3297d6a-514a0a```). In addition, see that a new Action (here: ```a-q3297d6a-f104ff```) has been created based on the Connector and the Rule:
+After a success message, you will see the newly created Rule (here: ```r-q3297d6a-f5b050```) and its reference to its Connector (here: ```c-q3297d6a-f168f6```). In addition, see that a new Action (here: ```a-q3297d6a-f104ff```) has been created based on the Connector and the Rule:
 
 ![Image](OUTOFDATEhttps://github.com/user-attachments/assets/63870ce5-c748-4e58-882c-581d001a7946)
 

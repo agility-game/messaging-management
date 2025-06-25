@@ -148,19 +148,19 @@ Next, we will be prompted which Connector we want to be using with our newly cre
 
 ![Image](https://github.com/user-attachments/assets/431812bd-9525-4910-a837-22449ffbd033)
 
-We select the previously created Connector (here ```c-q3297d6a-00666d```, that connects with PipeDreams's Webhook for "Device Registration").
+We select the previously created Connector (here ```c-q3297d6a-00666d```, that connects with PipeDreams's Webhook for "Field v1 Register").
 
 Fill in the fields as follows:
 
 - Action Type: **HTTP Server** (as we are using a Webhook call)
 - Action Name: **a-q3297d6a-031830** (which is auto-generated and unique)
-- Note: **Device Registration**
-- URL: ```Leave this empty, we are not specifying a deeper path for PipeDream's WebHook for "Device Registration"```
-- Method: **POST** (as we expect a response from the PipeDream's Webhook for "Device Registration")
+- Note: **Field v1 Register**
+- URL: ```Leave this empty, we are not specifying a deeper path for PipeDream's WebHook for "Field v1 Register"```
+- Method: **POST** (as we expect a response from the PipeDream's Webhook for "Field v1 Register")
 
 Leave all Headers at their default values.
 
-![Image](https://github.com/user-attachments/assets/f7928532-1420-4c45-94ba-434d2aafa28d)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/f7928532-1420-4c45-94ba-434d2aafa28d)
 
 In addition, scroll down and fill in the following:
 
@@ -174,13 +174,14 @@ In addition, scroll down and fill in the following:
     "location": "${location}",
     "ip_address": "${ip_address}",
     "firmware_version": "${firmware_version}",
+    "action": "{action}",
     "timestamp": "${timestamp}"
   }
   ```
 
 - Advanced Settings: ```Leave all default values as they are.```
 
-![Image](https://github.com/user-attachments/assets/17d381fc-921f-42d3-95ed-4075f08218f1)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/17d381fc-921f-42d3-95ed-4075f08218f1)
 
 Click **Confirm**.
 

@@ -29,33 +29,33 @@ graph TD
   - Click "New Workflow"
   - Name it "Field Registration"
 
-![Image](https://github.com/user-attachments/assets/7fbb6688-942c-405e-85cc-8a16898de6fe)  
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/7fbb6688-942c-405e-85cc-8a16898de6fe)  
 
 2. **Setup HTTP Webhook Trigger**
   - Select "HTTP / Webhook" as trigger
   - Choose "New HTTP Requests"
   - Copy the webhook URL (e.g., `https://eoei8q67ov9c8ic.m.pipedream.net`)
 
-![Image](https://github.com/user-attachments/assets/8c8a8820-6c57-4aab-886b-12a095d3f6b8)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/8c8a8820-6c57-4aab-886b-12a095d3f6b8)
 
-![Image](https://github.com/user-attachments/assets/63e04d6a-c6ea-4627-99fd-f3c6e0694fd2)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/63e04d6a-c6ea-4627-99fd-f3c6e0694fd2)
 
-![Image](https://github.com/user-attachments/assets/184afd67-19b5-47a3-b601-5c95108ee18c)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/184afd67-19b5-47a3-b601-5c95108ee18c)
 
-![Image](https://github.com/user-attachments/assets/56b15863-1303-4cb9-8faa-87bae124cbe4)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/56b15863-1303-4cb9-8faa-87bae124cbe4)
 
 Optionally, send a Test event:
 
-![Image](https://github.com/user-attachments/assets/f035656e-297b-4443-a058-9874e348e630)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/f035656e-297b-4443-a058-9874e348e630)
 
 Success!!
 
-![Image](https://github.com/user-attachments/assets/2a8e4914-0091-4f29-a4f3-3e80f996a2ef)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/2a8e4914-0091-4f29-a4f3-3e80f996a2ef)
 
 3. **Add Name Generation Logic**
   - Add "Node.js" step for custom code:​​​​​​​​​​​​​​​​
 
-![Image](https://github.com/user-attachments/assets/11d9e113-86bd-4d3d-b758-467986821cd3)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/11d9e113-86bd-4d3d-b758-467986821cd3)
 
 ```
 // Generate Two-Word Name
@@ -140,26 +140,26 @@ export default defineComponent({
 
 Name the step "generate_name".
 
-![Image](https://github.com/user-attachments/assets/1502c0f5-d821-4be0-b22b-5062f58cf610)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/1502c0f5-d821-4be0-b22b-5062f58cf610)
 
 Test our step:
 
-![Image](https://github.com/user-attachments/assets/52b49fd0-0736-46f0-8a15-7c2045ef5008)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/52b49fd0-0736-46f0-8a15-7c2045ef5008)
 
 Success! A new field is registered in the MongoDB database "**mqtt_registery**" inside the collection "**field_registry**" and a two-word combination is assigned to it (here: ```electric-gate```).
 
 This can also be seen from our MongoDB Client:
 
-![Image](https://github.com/user-attachments/assets/234f7c29-384c-4789-a17e-2536d2c78e61)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/234f7c29-384c-4789-a17e-2536d2c78e61)
 
 4. **Add Response to EMQX Broker Logic**
   - Add "Node.js" step for custom code:​​​​​​​​​​​​​​​​
 
-![Image](https://github.com/user-attachments/assets/0e17a3c0-de5c-484a-8461-f7f55ae8da71)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/0e17a3c0-de5c-484a-8461-f7f55ae8da71)
 
 **WARNING**: You will have to configure the workflow to allow for **returning a custom response**.
 
-![Image](https://github.com/user-attachments/assets/eeb3f1d9-e8ee-4a67-a8f8-76c8992a31fc)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/eeb3f1d9-e8ee-4a67-a8f8-76c8992a31fc)
 
 ```
 // HTTP Response (Send response back to EMQX)
@@ -186,7 +186,7 @@ export default defineComponent({
 5. **Add MQTT Response to EMQX Broker Logic**
   - Add "Node.js" step for custom code:​​​​​​​​​​​​​​​​
 
-![Image](https://github.com/user-attachments/assets/84a3aac8-a83a-4558-93dd-938ef9f0cc68)  
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/84a3aac8-a83a-4558-93dd-938ef9f0cc68)  
 
 ```
 // Send MQTT Response (if you have MQTT client capability)
@@ -239,11 +239,11 @@ export default defineComponent({
 
 6. **Deploy the workflow**
 
-![Image](https://github.com/user-attachments/assets/80129162-4eba-4285-99c9-3db8bb47300b)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/80129162-4eba-4285-99c9-3db8bb47300b)
 
 And test the deployed workflow (https://eoei8q67ov9c8ic.m.pipedream.net/):
 
-![Image](https://github.com/user-attachments/assets/0fbf992c-f3cd-47ec-8451-f8dc85dac47d)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/0fbf992c-f3cd-47ec-8451-f8dc85dac47d)
 
 We sent a sample device configuration:
 
@@ -259,10 +259,10 @@ We sent a sample device configuration:
 
 And the workflow shows successful!
 
-![Image](https://github.com/user-attachments/assets/4109b4b7-a26b-4f5e-a300-3efa1d138982)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/4109b4b7-a26b-4f5e-a300-3efa1d138982)
 
 Also when looked at from the MongoDB Client:
 
-![Image](https://github.com/user-attachments/assets/e367889f-e09b-409c-a015-69621f23b88c)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/e367889f-e09b-409c-a015-69621f23b88c)
 
 == WE ARE HERE ==

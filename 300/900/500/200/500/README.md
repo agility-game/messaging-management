@@ -146,7 +146,7 @@ Test our step:
 
 ![Image](https://github.com/user-attachments/assets/52b49fd0-0736-46f0-8a15-7c2045ef5008)
 
-Success! A new field is registered in the MongoDB database "**mqtt_registery**" inside the collection "**field_registry**" and a two-word combination is assigned to it (here: ```rapid-flame```).
+Success! A new field is registered in the MongoDB database "**mqtt_registery**" inside the collection "**field_registry**" and a two-word combination is assigned to it (here: ```electric-gate```).
 
 This can also be seen from our MongoDB Client:
 

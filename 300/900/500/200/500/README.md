@@ -34,7 +34,7 @@ graph TD
 2. **Setup HTTP Webhook Trigger**
   - Select "HTTP / Webhook" as trigger
   - Choose "New HTTP Requests"
-  - Copy the webhook URL (e.g., `https://eoh8781e35at724.m.pipedream.net`)
+  - Copy the webhook URL (e.g., `https://eoei8q67ov9c8ic.m.pipedream.net`)
 
 ![Image](https://github.com/user-attachments/assets/8c8a8820-6c57-4aab-886b-12a095d3f6b8)
 

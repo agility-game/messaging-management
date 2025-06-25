@@ -193,7 +193,7 @@ Now let us try to have an MQTT message that was published by Eccel Pepper C1 MUX
 
 Exciting!!
 
-First, after having powered on the Eccel Pepper C1 MUX Reader it shows that it has conencted successfully to the EMQX Broker:
+First, after having powered on the Eccel Pepper C1 MUX Reader it shows that it has connected successfully to the EMQX Broker:
 
 ![Image](OUTOFDATEhttps://github.com/user-attachments/assets/db777bd4-0564-4f16-999c-15d51c8160b5)
 

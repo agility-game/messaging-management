@@ -48,19 +48,19 @@ Now choose **Web Service** -> **HTTP** on EMQX's Data Integration page, which al
 
 Click **Test** to check if the triggering of the webhook is working successfully.
 
-![Image](https://github.com/user-attachments/assets/738600bf-029b-4380-b94e-544c1b1b624a)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/738600bf-029b-4380-b94e-544c1b1b624a)
 
 We see a dialogue in the upper right corner **Connector Available**, hence the test is successful.
 
-Click **New** to save the newly created connector (here: ```c-q3297d6a-00666d```).
+Click **New** to save the newly created connector (here: ```c-q3297d6a-514a0a```).
 
 You will see the new connector listed.
 
-![Image](https://github.com/user-attachments/assets/eb202044-8c76-425e-adf1-da8feb08819c)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/eb202044-8c76-425e-adf1-da8feb08819c)
 
 Now it is time to add a Rule, by clicking on **+ New Rule**.
 
-![Image](https://github.com/user-attachments/assets/cbff1179-fa04-4e2c-b945-6c92e92736a1)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/cbff1179-fa04-4e2c-b945-6c92e92736a1)
 
 Use the following for SQL:
 
@@ -74,34 +74,34 @@ SELECT
   payload.firmware_version as firmware_version,
   now_timestamp('millisecond') as timestamp
 FROM 
-  "device/register"
+  "fields/v1/publish"
 WHERE 
-  payload.device_type != ''
+  payload.action = 'field/v1/register'
 ```
 
 Then above SQL statement does the following:
 
-- It references the ```device/register``` MQTT topic defined on EMQX Broker used for registration of a device.
+- It references the ```fields/v1/publish``` MQTT topic defined on EMQX Broker used for picking up publications of fields (e.g. Eccel C1 PEPPER MUX Reader).
 - It provides the data (here: ```payload```), as well as the client id that was sent in the MQTT message to the above topic and creates a timestamp.
-- It won't progress if the ```device_type``` is empty.
+- It won't progress if the ```action``` is other than ```field/v1/register```.
 
-In **Note**, write ```Device Registration``` for ease of reference.
+In **Note**, write ```Field v1 Register``` for ease of reference.
 
 Now for the purpose of testing our SQL, enable **Try It Out**.
 
-![Image](https://github.com/user-attachments/assets/ca8080c0-f6bb-4cdf-a1a4-ea28c61a33a4)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/ca8080c0-f6bb-4cdf-a1a4-ea28c61a33a4)
 
-You should see that the topic is now set to ```device/register```.
+You should see that the topic is now set to ```fields/v1/publish```.
 
 Scroll down and fill in the fields as follows:
 
 - Data Source: **Message Publish**
 
-![Image](https://github.com/user-attachments/assets/c4918519-e1af-4cf7-89fe-3de0a15e9951)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/c4918519-e1af-4cf7-89fe-3de0a15e9951)
 
 - Client ID: **undefined** (as we still have to register the device, which will set a Client ID)
 - Username: **tlkaaxtf:tlkaaxtf** (as defined in EMQX Broker under authentication)
-- Topic: **device/register**
+- Topic: **fields/v1/publish**
 - Quality of Service (QoS): **1** (meaning we expect confirmation by Pipedream on retrieval of the message)
 - Payload:
 
@@ -111,17 +111,18 @@ Scroll down and fill in the fields as follows:
      "mac_address": "AA:BB:CC:DD:EE:FF",
      "location": "office",
      "ip_address": "192.168.1.100",
-     "firmware_version": "1.2.3"
+     "firmware_version": "1.2.3",
+     "action": "field/v1/register"
    }
    ```
 
 For testing purposes we set arbitrary values as payload. In practice, this data will come from Eccel Pepper C1 MUX Reader.
 
-![Image](https://github.com/user-attachments/assets/25fe760b-d23a-4288-ba5b-6801c0c7cc79)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/25fe760b-d23a-4288-ba5b-6801c0c7cc79)
 
 Click **Test**.
 
-![Image](https://github.com/user-attachments/assets/6f0884fb-bf58-4232-aa39-281675c34d14)
+![Image](OUTOFDATEhttps://github.com/user-attachments/assets/6f0884fb-bf58-4232-aa39-281675c34d14)
 
 We see **Test Passed** and the following Output Result:
 
@@ -135,7 +136,6 @@ We see **Test Passed** and the following Output Result:
   "mac_address": "AA:BB:CC:DD:EE:FF",
   "timestamp": 1750338400048
 }
-
 ```
 
 Congratulations!

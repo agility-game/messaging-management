@@ -11,3 +11,15 @@ See [README.md](./200/README.md)
 ## 300 - Device Deletion Workflow
 
 See [README.md](./300/README.md)
+
+## 400 - Game Registration Workflow
+
+See [README.md](./400/README.md)
+
+## 500 - Field Registration Workflow
+
+See [README.md](./500/README.md)
+
+## 600 - Player Registration Workflow
+
+See [README.md](./600/README.md)

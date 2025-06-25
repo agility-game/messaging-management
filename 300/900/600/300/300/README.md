@@ -72,6 +72,7 @@ SELECT
   payload.location as location,
   payload.ip_address as ip_address,
   payload.firmware_version as firmware_version,
+  payload.action as action,
   now_timestamp('millisecond') as timestamp
 FROM 
   "fields/v1/publish"
@@ -128,6 +129,7 @@ We see **Test Passed** and the following Output Result:
 
 ```json
 {
+  "action": "field/v1/register",  
   "clientid": "undefined",
   "device_type": "Eccel Pepper C1 MUX",
   "firmware_version": "1.2.3",

@@ -238,6 +238,15 @@ Send a test message from within PipeDream's Workflow "Publish v1", to see if a n
 
 ![Image](https://github.com/user-attachments/assets/73742e18-9625-47ce-8331-de9d5032dc74)
 
+Followed by:
+
+![Image](https://github.com/user-attachments/assets/cd39687f-91de-4103-8875-00e4ca7b8351)
+
+
+![Image](https://github.com/user-attachments/assets/418c6af9-d96b-46e6-a311-ad3b4306fccf)
+
+![Image](https://github.com/user-attachments/assets/e4a12ff9-034a-456e-b45d-a55014e91814)
+
 MongoDB collection ```registry`` shows a new record:
 
 == IMAGE GOES HERE == 

@@ -264,8 +264,7 @@ Now do the full testing from swiping an NFC Tag (here:  ```04B884BC700000```) ac
 
 The message is received on the EMQX Broker:
 
-![Image](https://github.com/user-attachments/assets/d18c40d3-6eb8-4b34-bf1a-00bcdf8890a4)
-
+![Image](https://github.com/user-attachments/assets/c928d813-8057-4ed6-b56e-b63366ca65d5)
 
 In the logs, look for log_01.txt:
 

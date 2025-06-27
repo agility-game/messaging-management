@@ -212,7 +212,7 @@ Now looking in the logs of the EMQX Broker, let's see if the MQTT message contai
 
 **Note**: We can test the process from within EMQX Broker first as follows:
 
-=== IMAGE GOES HERE ==
+![Image](https://github.com/user-attachments/assets/663574ac-31c3-443c-8ec0-18de9e2274d6)
 
 Push **Publish**:
 

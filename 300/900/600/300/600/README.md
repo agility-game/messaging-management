@@ -202,7 +202,9 @@ Then, when we bring an NFC card close to one of the Antenna's, the Eccel Pepper 
 
 Now looking in the logs of the EMQX Broker, let's see if the MQTT message containing the Tag's data has been published successfully:
 
-**Note**: Make sure the User (here: ```tlkaaxtf:tlkaaxtf```) in EMQX Broker has permissions for Publish on the topic of ```publish/v1```:
+**Note**: Make sure User names do not contain special characters (such as ':'), as those will not be successfully processed! 
+
+**Note**: Make sure the User (here: ```tlkaaxtf```) in EMQX Broker has permissions for Publish on the topic of ```publish/v1```:
 
 ![Image](https://github.com/user-attachments/assets/31ffac7b-1105-4ce7-ae57-06f0918175b6)
 
@@ -264,7 +266,7 @@ Now do the full testing from swiping an NFC Tag (here:  ```04B884BC700000```) ac
 
 The message is received on the EMQX Broker:
 
-![Image](https://github.com/user-attachments/assets/c928d813-8057-4ed6-b56e-b63366ca65d5)
+![Image](https://github.com/user-attachments/assets/c74febf3-07d0-4ee7-8180-159d803c5b2d)
 
 In the logs, look for log_01.txt:
 

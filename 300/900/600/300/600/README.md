@@ -49,6 +49,18 @@ Now choose **Web Service** -> **HTTP** on EMQX's Data Integration page, which al
 
 Click **Test** to check if the triggering of the webhook is working successfully.
 
+![Image](https://github.com/user-attachments/assets/5c98e4ca-9ec8-4703-b46e-4fb88ef50e31)
+
+We see a dialogue in the upper right corner **Connector Available**, hence the test is successful.
+
+Click **New** to save the newly created connector (here: ```c-q3297d6a-db112d```).
+
+You will see the new connector listed (here: **Publish v1**).
+
+![Image](https://github.com/user-attachments/assets/e5476bd3-c4b7-4a34-b198-078e4052b554)
+
+Now it is time to add a Rule, by clicking on **+ New Rule**.
+
 
 
 

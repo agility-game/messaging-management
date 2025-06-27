@@ -40,6 +40,15 @@ See https://pipedream.com/@wvanheemstra/projects/proj_e5smjgK/publish-v1-p_aNCx3
 
 The URL of the Webhook is: https://eowu9nfjfw5x4qr.m.pipedream.net
 
+Now choose **Web Service** -> **HTTP** on EMQX's Data Integration page, which allows you to enter the previously found URL of the Webhook in Pipedream.
+
+![Image](https://github.com/user-attachments/assets/24c208cc-cbe8-4511-b61c-779dbfabf210)
+
+
+**Note**: Make sure to have ```Enable TLS``` **enabled**, and ```TLS Verify``` **disabled**.
+
+Click **Test** to check if the triggering of the webhook is working successfully.
+
 
 
 

@@ -246,7 +246,7 @@ Followed by:
 
 ![Image](https://github.com/user-attachments/assets/e4a12ff9-034a-456e-b45d-a55014e91814)
 
-MongoDB collection ```registry`` shows a new record:
+MongoDB collection ```registry``` shows a new record:
 
 ![Image](https://github.com/user-attachments/assets/4e8bd091-69f3-4941-8da8-6fa00edc2ccf)
 

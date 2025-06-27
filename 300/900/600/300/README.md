@@ -20,4 +20,12 @@ See [README.md](./400/README.md)
 
 See [README.md](./500/README.md)
 
+## 600 - Managing Publish
+
+See [README.md](./600/README.md)
+
+## 700 - Managing Subscribe
+
+See [README.md](./700/README.md)
+
 MORE

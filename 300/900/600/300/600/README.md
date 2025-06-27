@@ -154,12 +154,32 @@ We select the previously created Connector (here ```c-q3297d6a-f168f6```, that c
 Fill in the fields as follows:
 
 - Action Type: **HTTP Server** (as we are using a Webhook call)
-- Action Name: **a-q3297d6a-f104ff** (which is auto-generated and unique)
+- Action Name: **a-q3297d6a-f12dda** (which is auto-generated and unique)
 - Note: **Publish v1**
 - URL: ```Leave this empty, we are not specifying a deeper path for PipeDream's WebHook for "Publish v1"```
 - Method: **POST** (as we expect a response from the PipeDream's Webhook for "Publish v1")
 
 Leave all Headers at their default values.
 
+![Image](https://github.com/user-attachments/assets/3e392662-4e50-4541-a4e6-bd9fc293c0ed)
+
+In addition, scroll down and fill in the following:
+
+- Body: 
+
+  ```json
+  {
+    "client_id": "${clientid}",
+    "device_type": "${device_type}",
+    "mac_address": "${mac_address}",
+    "location": "${location}",
+    "ip_address": "${ip_address}",
+    "firmware_version": "${firmware_version}",
+    "action": "{action}",
+    "timestamp": "${timestamp}"
+  }
+  ```
+
+- Advanced Settings: ```Leave all default values as they are.```
 
 MORE

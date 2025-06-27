@@ -61,6 +61,68 @@ You will see the new connector listed (here: **Publish v1**).
 
 Now it is time to add a Rule, by clicking on **+ New Rule**.
 
+![Image](https://github.com/user-attachments/assets/fbde43b8-d4e6-4216-aada-24362b8c6c05)
+
+Use the following for SQL:
+
+```sql
+SELECT 
+  clientid,
+  payload.device_type as device_type,
+  payload.mac_address as mac_address,
+  payload.location as location,
+  payload.ip_address as ip_address,
+  payload.firmware_version as firmware_version,
+  payload.action as action,
+  now_timestamp('millisecond') as timestamp
+FROM 
+  "publish/v1"
+WHERE 
+  payload.action = 'publish/v1'
+```
+
+Then above SQL statement does the following:
+
+- It references the ```publish/v1``` MQTT topic defined on EMQX Broker used for picking up publications (e.g. Eccel C1 PEPPER MUX Reader).
+- It provides the data (here: ```payload```), as well as the client id that was sent in the MQTT message to the above topic and creates a timestamp.
+- It won't progress if the ```action``` is other than ```publish/v1```.
+
+In **Note**, write ```Publish v1``` for ease of reference.
+
+Now for the purpose of testing our SQL, enable **Try It Out**.
+
+![Image](https://github.com/user-attachments/assets/b0018aff-0560-4013-9cdd-07a5063e3668)
+
+You should see that the topic is now set to ```publish/v1```.
+
+Scroll down and fill in the fields as follows:
+
+- Data Source: **Message Publish**
+
+![Image](https://github.com/user-attachments/assets/60564b7c-c51b-4ab5-a444-eeb04973dbb3)
+
+- Client ID: **undefined** (as we still have to register the device, which will set a Client ID)
+- Username: **tlkaaxtf:tlkaaxtf** (as defined in EMQX Broker under authentication)
+- Topic: **publish/v1**
+- Quality of Service (QoS): **1** (meaning we expect confirmation by Pipedream on retrieval of the message)
+- Payload:
+
+   ```json
+   {
+     "device_type": "Eccel Pepper C1 MUX",
+     "mac_address": "AA:BB:CC:DD:EE:FF",
+     "location": "office",
+     "ip_address": "192.168.1.100",
+     "firmware_version": "1.2.3",
+     "action": "publish/v1"
+   }
+   ```
+
+For testing purposes we set arbitrary values as payload. In practice, this data will come from Eccel Pepper C1 MUX Reader.
+
+== IMAGE GOES HERE ==
+
+Click **Test**.
 
 
 

@@ -233,3 +233,16 @@ As you can see, the message has been published successfully:
 Now let's look if the Pipedream Workflow for "Publish v1" has been started, based on our **Publish** action.
 
 MORE
+
+Send a test message from within PipeDream's Workflow "Publish v1", to see if a new document is created in MongoDB ```registry``` collection:
+
+![Image](https://github.com/user-attachments/assets/73742e18-9625-47ce-8331-de9d5032dc74)
+
+MongoDB collection ```registry`` shows a new record:
+
+== IMAGE GOES HERE == 
+
+
+
+
+MORE

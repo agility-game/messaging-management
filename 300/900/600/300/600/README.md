@@ -242,7 +242,6 @@ Followed by:
 
 ![Image](https://github.com/user-attachments/assets/cd39687f-91de-4103-8875-00e4ca7b8351)
 
-
 ![Image](https://github.com/user-attachments/assets/418c6af9-d96b-46e6-a311-ad3b4306fccf)
 
 ![Image](https://github.com/user-attachments/assets/e4a12ff9-034a-456e-b45d-a55014e91814)
@@ -252,6 +251,12 @@ MongoDB collection ```registry`` shows a new record:
 ![Image](https://github.com/user-attachments/assets/4e8bd091-69f3-4941-8da8-6fa00edc2ccf)
 
 Success!
+
+Now do the full testing from swiping a NFC Tag across the Eccel Pepper C1 MUX Reader.
+
+The message is received on the EMQX Broker:
+
+![Image](https://github.com/user-attachments/assets/d18c40d3-6eb8-4b34-bf1a-00bcdf8890a4)
 
 
 

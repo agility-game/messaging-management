@@ -204,7 +204,7 @@ Now looking in the logs of the EMQX Broker, let's see if the MQTT message contai
 
 **Note**: Make sure the User (here: ```tlkaaxtf:tlkaaxtf```) in EMQX Broker has permissions for Publish on the topic of ```publish/v1```:
 
-== IMAGE GOES HERE ==
+![Image](https://github.com/user-attachments/assets/0a9a946a-35fa-4c8c-8af4-966dfa98d458)
 
 **Note**: We can test the process from within EMQX Broker first as follows:
 

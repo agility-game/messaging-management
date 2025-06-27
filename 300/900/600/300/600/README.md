@@ -252,7 +252,7 @@ MongoDB collection ```registry`` shows a new record:
 
 Success!
 
-Now do the full testing from swiping a NFC Tag across the Eccel Pepper C1 MUX Reader.
+Now do the full testing from swiping an NFC Tag (here:  ```04B884BC700000```) across one of the eight Antennas that are connected to the Eccel Pepper C1 MUX Reader.
 
 The message is received on the EMQX Broker:
 

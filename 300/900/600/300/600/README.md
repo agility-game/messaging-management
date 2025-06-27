@@ -147,7 +147,19 @@ Click **Next**.
 
 Next, we will be prompted which Connector we want to be using with our newly created Rule.
 
+![Image](https://github.com/user-attachments/assets/236cdedd-3e6e-408c-9465-bd9c76748094)
 
+We select the previously created Connector (here ```c-q3297d6a-f168f6```, that connects with PipeDreams's Webhook for "Publish v1").
+
+Fill in the fields as follows:
+
+- Action Type: **HTTP Server** (as we are using a Webhook call)
+- Action Name: **a-q3297d6a-f104ff** (which is auto-generated and unique)
+- Note: **Publish v1**
+- URL: ```Leave this empty, we are not specifying a deeper path for PipeDream's WebHook for "Publish v1"```
+- Method: **POST** (as we expect a response from the PipeDream's Webhook for "Publish v1")
+
+Leave all Headers at their default values.
 
 
 MORE

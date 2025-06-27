@@ -149,7 +149,7 @@ Next, we will be prompted which Connector we want to be using with our newly cre
 
 ![Image](https://github.com/user-attachments/assets/236cdedd-3e6e-408c-9465-bd9c76748094)
 
-We select the previously created Connector (here ```c-q3297d6a-f168f6```, that connects with PipeDreams's Webhook for "Publish v1").
+We select the previously created Connector (here ```c-q3297d6a-db112d```, that connects with PipeDreams's Webhook for "Publish v1").
 
 Fill in the fields as follows:
 
@@ -182,10 +182,36 @@ In addition, scroll down and fill in the following:
 
 - Advanced Settings: ```Leave all default values as they are.```
 
-== IMAGE GOES HERE ==
+![Image](https://github.com/user-attachments/assets/6712a4b8-5023-4323-8cce-3150511fc96c)
 
 Click **Confirm**.
 
-After a success message, you will see the newly created Rule (here: ```r-q3297d6a-f5b050```) and its reference to its Connector (here: ```c-q3297d6a-f168f6```). In addition, see that a new Action (here: ```a-q3297d6a-f12dda```) has been created based on the Connector and the Rule:
+After a success message, you will see the newly created Rule (here: ```r-q3297d6a-66dbfb```) and its reference to its Connector (here: ```c-q3297d6a-db112d```). In addition, see that a new Action (here: ```a-q3297d6a-f12dda```) has been created based on the Connector and the Rule:
+
+![Image](https://github.com/user-attachments/assets/eca09bd5-cdb7-49e2-b42c-4ad4b3048332)
+
+Now let us try to have an MQTT message that was published by Eccel Pepper C1 MUX Reader be picked up by EMQX Broker, processed by our Rule "Publish v1", triggering the Webhook at PipeDream's Workflow for "Publish v1" which calls Sliplane to store the device with a unique two-word Client ID in MongoDB, and return the registration of the device with this Client ID.
+
+Exciting!!
+
+First, after having powered on the Eccel Pepper C1 MUX Reader it shows that it has connected successfully to the EMQX Broker:
+
+![Image](https://github.com/user-attachments/assets/a3c29f8d-2572-400f-b1b1-a16614cc7941)
+
+Then, when we bring an NFC card close to one of the Antenna's, the Eccel Pepper C1 MUX Reader flashes that it has read the NFC Tag.
+
+Now looking in the logs of the EMQX Broker, let's see if the MQTT message containing the Tag's data has been published successfully:
+
+**Note**: Make sure the User (here: ```tlkaaxtf:tlkaaxtf```) in EMQX Broker has permissions for Publish on the topic of ```publish/v1```:
+
+== IMAGE GOES HERE ==
+
+**Note**: We can test the process from within EMQX Broker first as follows:
+
+=== IMAGE GOES HERE ==
+
+Push **Publish**:
+
+== IMAGE GOES HERE ==
 
 MORE

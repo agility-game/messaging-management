@@ -249,7 +249,9 @@ Followed by:
 
 MongoDB collection ```registry`` shows a new record:
 
-== IMAGE GOES HERE == 
+![Image](https://github.com/user-attachments/assets/4e8bd091-69f3-4941-8da8-6fa00edc2ccf)
+
+Success!
 
 
 

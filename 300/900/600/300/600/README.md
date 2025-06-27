@@ -252,6 +252,10 @@ MongoDB collection ```registry`` shows a new record:
 
 Success!
 
+Make sure that the **Output topic** of the Eccel Pepper C1 MUX Reader is set to **publish/v1**, and the **Input topic** is set to **subscribe/v1**.
+
+![Image](https://github.com/user-attachments/assets/4346c95e-d7a0-4fe3-9613-435d942ab108)
+
 Now do the full testing from swiping an NFC Tag (here:  ```04B884BC700000```) across one of the eight Antennas that are connected to the Eccel Pepper C1 MUX Reader.
 
 The message is received on the EMQX Broker:

@@ -252,6 +252,10 @@ MongoDB collection ```registry`` shows a new record:
 
 Success!
 
+Make sure you have Offset from the Universal Time Code (UTC) for in this case Amsterdam (+2) and enabled log for testing:
+
+![Image](https://github.com/user-attachments/assets/43bb11c1-a06b-4b4d-9ff1-a305d0c052f6)
+
 Make sure that the **Output topic** of the Eccel Pepper C1 MUX Reader is set to **publish/v1**, and the **Input topic** is set to **subscribe/v1**.
 
 ![Image](https://github.com/user-attachments/assets/4346c95e-d7a0-4fe3-9613-435d942ab108)
@@ -262,6 +266,17 @@ The message is received on the EMQX Broker:
 
 ![Image](https://github.com/user-attachments/assets/d18c40d3-6eb8-4b34-bf1a-00bcdf8890a4)
 
+
+In the logs, look for log_01.txt:
+
+![Image](https://github.com/user-attachments/assets/014f8c0d-d98a-421c-93b9-0e567cc1957c)
+
+The last two entries in the log are of the swipped NFC tag:
+
+```
+1970-01-09 05:00:26.946 - I (279573) rfid: Card nr 0 - MIFARE Ultralight, SAK: 0, UID: 04B884BC700000, antenna: 1
+1970-01-09 05:00:27.142 - I (279769) rfid: Card nr 0 - MIFARE Ultralight, SAK: 0, UID: 04B884BC700000, antenna: 1
+```
 
 
 

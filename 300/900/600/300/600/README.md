@@ -270,13 +270,14 @@ The message is received on the EMQX Broker:
 
 In the logs, look for log_01.txt:
 
-![Image](https://github.com/user-attachments/assets/014f8c0d-d98a-421c-93b9-0e567cc1957c)
+![Image](https://github.com/user-attachments/assets/ac76da96-dbff-4c80-817c-a96060574c99)
 
 The last two entries in the log are of the swipped NFC tag:
 
 ```
-1970-01-09 05:00:26.946 - I (279573) rfid: Card nr 0 - MIFARE Ultralight, SAK: 0, UID: 04B884BC700000, antenna: 1
-1970-01-09 05:00:27.142 - I (279769) rfid: Card nr 0 - MIFARE Ultralight, SAK: 0, UID: 04B884BC700000, antenna: 1
+1970-01-09 08:24:00.726 - I (9764549) rfid: Card nr 0 - MIFARE Ultralight, SAK: 0, UID: 04B884BC700000, antenna: 1
+1970-01-09 08:24:00.925 - I (9764749) rfid: Card nr 0 - MIFARE Ultralight, SAK: 0, UID: 04B884BC700000, antenna: 1
+1970-01-09 08:24:01.125 - I (9764949) rfid: Card nr 0 - MIFARE Ultralight, SAK: 0, UID: 04B884BC700000, antenna: 1
 ```
 
 

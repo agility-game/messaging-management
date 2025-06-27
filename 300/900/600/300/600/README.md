@@ -124,6 +124,29 @@ For testing purposes we set arbitrary values as payload. In practice, this data 
 
 Click **Test**.
 
+![Image](https://github.com/user-attachments/assets/e6469c9e-80af-4b85-9648-622990cae756)
+
+We see **Test Passed** and the following Output Result:
+
+```json
+{
+  "action": "publish/v1",
+  "clientid": "undefined",
+  "device_type": "Eccel Pepper C1 MUX",
+  "firmware_version": "1.2.3",
+  "ip_address": "192.168.1.100",
+  "location": "office",
+  "mac_address": "AA:BB:CC:DD:EE:FF",
+  "timestamp": 1751023123303
+}
+```
+
+Congratulations!
+
+Click **Next**.
+
+Next, we will be prompted which Connector we want to be using with our newly created Rule.
+
 
 
 

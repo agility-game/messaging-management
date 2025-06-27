@@ -182,4 +182,10 @@ In addition, scroll down and fill in the following:
 
 - Advanced Settings: ```Leave all default values as they are.```
 
+== IMAGE GOES HERE ==
+
+Click **Confirm**.
+
+After a success message, you will see the newly created Rule (here: ```r-q3297d6a-f5b050```) and its reference to its Connector (here: ```c-q3297d6a-f168f6```). In addition, see that a new Action (here: ```a-q3297d6a-f12dda```) has been created based on the Connector and the Rule:
+
 MORE

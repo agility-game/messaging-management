@@ -216,6 +216,20 @@ Now looking in the logs of the EMQX Broker, let's see if the MQTT message contai
 
 Push **Publish**:
 
-== IMAGE GOES HERE ==
+![Image](https://github.com/user-attachments/assets/7bd8940b-b8f5-4373-bf5b-a6c455b9d0e7)
+
+As you can see, the message has been published successfully:
+
+```json
+{
+  "device_type": "Eccel Pepper C1 MUX", 
+  "mac_address": "AA:BB:CC:DD:EE:FF", 
+  "location": "office", 
+  "ip_address": "192.168.1.100", 
+  "firmware_version": "1.2.3"
+}
+```
+
+Now let's look if the Pipedream Workflow for "Publish v1" has been started, based on our **Publish** action.
 
 MORE

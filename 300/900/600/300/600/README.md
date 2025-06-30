@@ -68,24 +68,24 @@ Use the following for SQL:
 ```sql
 SELECT 
   clientid,
+  topic as action,
   payload.device_type as device_type,
   payload.mac_address as mac_address,
   payload.location as location,
   payload.ip_address as ip_address,
   payload.firmware_version as firmware_version,
-  payload.action as action,
   now_timestamp('millisecond') as timestamp
 FROM 
   "publish/v1"
 WHERE 
-  payload.action = 'publish/v1'
+  topic = 'publish/v1'
 ```
 
 Then above SQL statement does the following:
 
 - It references the ```publish/v1``` MQTT topic defined on EMQX Broker used for picking up publications (e.g. Eccel C1 PEPPER MUX Reader).
 - It provides the data (here: ```payload```), as well as the client id that was sent in the MQTT message to the above topic and creates a timestamp.
-- It won't progress if the ```action``` is other than ```publish/v1```.
+- It won't progress if the ```topic``` is other than ```publish/v1```.
 
 In **Note**, write ```Publish v1``` for ease of reference.
 
@@ -114,7 +114,6 @@ Scroll down and fill in the fields as follows:
      "location": "office",
      "ip_address": "192.168.1.100",
      "firmware_version": "1.2.3",
-     "action": "publish/v1"
    }
    ```
 

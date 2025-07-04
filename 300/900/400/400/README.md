@@ -7,5 +7,29 @@ For Agility Game, this format allows anyone to easily query the documents in Mon
 For a simple recording of a "Field", here is an example document following the Iceberg format:
 
 ```
-...
+{
+  field_id: "field_antenna1",
+  antenna_id: "antenna1", 
+  field_name: "Go",
+  player_id: "player1",
+  position_x: -2.0,
+  position_y: 0.0,
+  position_z: -2.0,
+  last_update_ts: "2025-07-02T10:30:00Z",
+  created_at: "2025-07-02T10:00:00Z",
+  updated_at: "2025-07-02T10:30:00Z",
+  is_active: true,
+  snapshot_id: 1719919800123,
+  sequence_number: 5,
+  __iceberg_metadata: {
+    schema_id: 1,
+    partition_data: {
+      antenna_id: "antenna1",
+      update_day: "2025-07-02"
+    },
+    file_path: "data/antenna1/2025/07/02/data.parquet",
+    record_count: 1,
+    file_size_bytes: 1024
+  }
+}
 ```
